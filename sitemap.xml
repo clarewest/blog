@@ -3,167 +3,167 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://clarewest.github.io/blogg/categories/</loc>
+    <loc>https://clarewest.github.io/blog/categories/</loc>
     <lastmod>2020-09-09T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://clarewest.github.io/blogg/</loc>
+    <loc>https://clarewest.github.io/blog/</loc>
     <lastmod>2020-09-09T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://clarewest.github.io/blogg/tags/dt/</loc>
+    <loc>https://clarewest.github.io/blog/tags/dt/</loc>
     <lastmod>2020-09-09T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://clarewest.github.io/blogg/tags/formattable/</loc>
+    <loc>https://clarewest.github.io/blog/tags/formattable/</loc>
     <lastmod>2020-09-09T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://clarewest.github.io/blogg/post/making-tables-shiny/</loc>
+    <loc>https://clarewest.github.io/blog/post/making-tables-shiny/</loc>
     <lastmod>2020-09-09T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://clarewest.github.io/blogg/tags/packages/</loc>
+    <loc>https://clarewest.github.io/blog/tags/packages/</loc>
     <lastmod>2020-09-09T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://clarewest.github.io/blogg/post/</loc>
+    <loc>https://clarewest.github.io/blog/post/</loc>
     <lastmod>2020-09-09T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://clarewest.github.io/blogg/categories/r/</loc>
+    <loc>https://clarewest.github.io/blog/categories/r/</loc>
     <lastmod>2020-09-09T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://clarewest.github.io/blogg/tags/reactable/</loc>
+    <loc>https://clarewest.github.io/blog/tags/reactable/</loc>
     <lastmod>2020-09-09T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://clarewest.github.io/blogg/tags/shiny/</loc>
+    <loc>https://clarewest.github.io/blog/tags/shiny/</loc>
     <lastmod>2020-09-09T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://clarewest.github.io/blogg/tags/tables/</loc>
+    <loc>https://clarewest.github.io/blog/tags/tables/</loc>
     <lastmod>2020-09-09T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://clarewest.github.io/blogg/tags/</loc>
+    <loc>https://clarewest.github.io/blog/tags/</loc>
     <lastmod>2020-09-09T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://clarewest.github.io/blogg/post/2020-04-23-packaging-your-r-code/</loc>
+    <loc>https://clarewest.github.io/blog/post/2020-04-23-packaging-your-r-code/</loc>
     <lastmod>2020-04-23T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://clarewest.github.io/blogg/tags/roxygen2/</loc>
+    <loc>https://clarewest.github.io/blog/tags/roxygen2/</loc>
     <lastmod>2020-04-23T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://clarewest.github.io/blogg/tags/testthat/</loc>
+    <loc>https://clarewest.github.io/blog/tags/testthat/</loc>
     <lastmod>2020-04-23T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://clarewest.github.io/blogg/tags/usethis/</loc>
+    <loc>https://clarewest.github.io/blog/tags/usethis/</loc>
     <lastmod>2020-04-23T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://clarewest.github.io/blogg/categories/plotting/</loc>
+    <loc>https://clarewest.github.io/blog/categories/plotting/</loc>
     <lastmod>2020-03-26T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://clarewest.github.io/blogg/tags/upsetr/</loc>
+    <loc>https://clarewest.github.io/blog/tags/upsetr/</loc>
     <lastmod>2020-03-26T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://clarewest.github.io/blogg/post/2020-03-26-upsetr-beyond-the-venn-diagram/</loc>
+    <loc>https://clarewest.github.io/blog/post/2020-03-26-upsetr-beyond-the-venn-diagram/</loc>
     <lastmod>2020-03-26T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://clarewest.github.io/blogg/categories/commandline/</loc>
+    <loc>https://clarewest.github.io/blog/categories/commandline/</loc>
     <lastmod>2020-03-03T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://clarewest.github.io/blogg/post/handling-json-data-with-jq/</loc>
+    <loc>https://clarewest.github.io/blog/post/handling-json-data-with-jq/</loc>
     <lastmod>2020-03-03T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://clarewest.github.io/blogg/tags/jq/</loc>
+    <loc>https://clarewest.github.io/blog/tags/jq/</loc>
     <lastmod>2020-03-03T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://clarewest.github.io/blogg/tags/json/</loc>
+    <loc>https://clarewest.github.io/blog/tags/json/</loc>
     <lastmod>2020-03-03T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://clarewest.github.io/blogg/about/</loc>
+    <loc>https://clarewest.github.io/blog/about/</loc>
     <lastmod>2020-01-01T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://clarewest.github.io/blogg/post/2019-08-27-combining-inset-plots-with-facets-using-ggplot/</loc>
+    <loc>https://clarewest.github.io/blog/post/2019-08-27-combining-inset-plots-with-facets-using-ggplot/</loc>
     <lastmod>2019-08-27T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://clarewest.github.io/blogg/tags/ggplot2/</loc>
+    <loc>https://clarewest.github.io/blog/tags/ggplot2/</loc>
     <lastmod>2019-08-27T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://clarewest.github.io/blogg/post/2019-06-11-brief-introduction-to-ggpairs/</loc>
+    <loc>https://clarewest.github.io/blog/post/2019-06-11-brief-introduction-to-ggpairs/</loc>
     <lastmod>2019-06-11T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://clarewest.github.io/blogg/tags/ggpairs/</loc>
+    <loc>https://clarewest.github.io/blog/tags/ggpairs/</loc>
     <lastmod>2019-06-11T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://clarewest.github.io/blogg/tags/internship/</loc>
+    <loc>https://clarewest.github.io/blog/tags/internship/</loc>
     <lastmod>2019-06-11T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://clarewest.github.io/blogg/post/not-proteins-in-parliament/</loc>
+    <loc>https://clarewest.github.io/blog/post/not-proteins-in-parliament/</loc>
     <lastmod>2019-06-11T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://clarewest.github.io/blogg/categories/personal/</loc>
+    <loc>https://clarewest.github.io/blog/categories/personal/</loc>
     <lastmod>2019-06-11T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://clarewest.github.io/blogg/tags/phd/</loc>
+    <loc>https://clarewest.github.io/blog/tags/phd/</loc>
     <lastmod>2019-06-11T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://clarewest.github.io/blogg/tags/policy/</loc>
+    <loc>https://clarewest.github.io/blog/tags/policy/</loc>
     <lastmod>2019-06-11T00:00:00+00:00</lastmod>
   </url>
   

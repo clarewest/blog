@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>tables on Clare&#39;s Blog</title>
-    <link>https://clarewest.github.io/blogg/tags/tables/</link>
+    <link>https://clarewest.github.io/blog/tags/tables/</link>
     <description>Recent content in tables on Clare&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Wed, 09 Sep 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://clarewest.github.io/blogg/tags/tables/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 09 Sep 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://clarewest.github.io/blog/tags/tables/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Making Tables Shiny: DT, formattable, and reactable</title>
-      <link>https://clarewest.github.io/blogg/post/making-tables-shiny/</link>
+      <link>https://clarewest.github.io/blog/post/making-tables-shiny/</link>
       <pubDate>Wed, 09 Sep 2020 00:00:00 +0000</pubDate>
       
-      <guid>https://clarewest.github.io/blogg/post/making-tables-shiny/</guid>
+      <guid>https://clarewest.github.io/blog/post/making-tables-shiny/</guid>
       <description>
 &lt;script src=&#34;{{&lt; blogdown/postref &gt;}}index_files/htmlwidgets/htmlwidgets.js&#34;&gt;&lt;/script&gt;
 &lt;script src=&#34;{{&lt; blogdown/postref &gt;}}index_files/jquery/jquery.min.js&#34;&gt;&lt;/script&gt;

@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Clare&#39;s Blog</title>
-    <link>https://clarewest.github.io/blogg/</link>
+    <link>https://clarewest.github.io/blog/</link>
     <description>Recent content on Clare&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Wed, 09 Sep 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://clarewest.github.io/blogg/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 09 Sep 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://clarewest.github.io/blog/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Making Tables Shiny: DT, formattable, and reactable</title>
-      <link>https://clarewest.github.io/blogg/post/making-tables-shiny/</link>
+      <link>https://clarewest.github.io/blog/post/making-tables-shiny/</link>
       <pubDate>Wed, 09 Sep 2020 00:00:00 +0000</pubDate>
       
-      <guid>https://clarewest.github.io/blogg/post/making-tables-shiny/</guid>
+      <guid>https://clarewest.github.io/blog/post/making-tables-shiny/</guid>
       <description>
 &lt;script src=&#34;{{&lt; blogdown/postref &gt;}}index_files/htmlwidgets/htmlwidgets.js&#34;&gt;&lt;/script&gt;
 &lt;script src=&#34;{{&lt; blogdown/postref &gt;}}index_files/jquery/jquery.min.js&#34;&gt;&lt;/script&gt;
@@ -44,10 +44,10 @@
     
     <item>
       <title>Packaging Your R Code</title>
-      <link>https://clarewest.github.io/blogg/post/2020-04-23-packaging-your-r-code/</link>
+      <link>https://clarewest.github.io/blog/post/2020-04-23-packaging-your-r-code/</link>
       <pubDate>Thu, 23 Apr 2020 00:00:00 +0000</pubDate>
       
-      <guid>https://clarewest.github.io/blogg/post/2020-04-23-packaging-your-r-code/</guid>
+      <guid>https://clarewest.github.io/blog/post/2020-04-23-packaging-your-r-code/</guid>
       <description>&lt;p&gt;Packages are more than just a convenient way
 to use methods and data sets developed by others in the community, and
 to get your own out into the world. Creating a package is also
@@ -59,10 +59,10 @@ coding practice.&lt;/p&gt;</description>
     
     <item>
       <title>UpSetR: Beyond the Venn diagram</title>
-      <link>https://clarewest.github.io/blogg/post/2020-03-26-upsetr-beyond-the-venn-diagram/</link>
+      <link>https://clarewest.github.io/blog/post/2020-03-26-upsetr-beyond-the-venn-diagram/</link>
       <pubDate>Thu, 26 Mar 2020 00:00:00 +0000</pubDate>
       
-      <guid>https://clarewest.github.io/blogg/post/2020-03-26-upsetr-beyond-the-venn-diagram/</guid>
+      <guid>https://clarewest.github.io/blog/post/2020-03-26-upsetr-beyond-the-venn-diagram/</guid>
       <description>&lt;p&gt;&lt;a href=&#34;https://cran.r-project.org/web/packages/UpSetR/readme/README.html&#34;&gt;&lt;code&gt;UpSetR&lt;/code&gt;&lt;/a&gt;
 is a package for visualising the intersections of many more sets than is
 feasible with, for example, Venn diagrams. They are particularly useful
@@ -74,29 +74,29 @@ with lots of options for exploring the data.&lt;/p&gt;</description>
     
     <item>
       <title>Handling JSON data with jq</title>
-      <link>https://clarewest.github.io/blogg/post/handling-json-data-with-jq/</link>
+      <link>https://clarewest.github.io/blog/post/handling-json-data-with-jq/</link>
       <pubDate>Tue, 03 Mar 2020 00:00:00 +0000</pubDate>
       
-      <guid>https://clarewest.github.io/blogg/post/handling-json-data-with-jq/</guid>
+      <guid>https://clarewest.github.io/blog/post/handling-json-data-with-jq/</guid>
       <description>&lt;p&gt;For a new project I&amp;rsquo;ve unwillingly transitioned from the safety and comfort of CSV files to a scary new world of JSON files.&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>About</title>
-      <link>https://clarewest.github.io/blogg/about/</link>
+      <link>https://clarewest.github.io/blog/about/</link>
       <pubDate>Wed, 01 Jan 2020 00:00:00 +0000</pubDate>
       
-      <guid>https://clarewest.github.io/blogg/about/</guid>
+      <guid>https://clarewest.github.io/blog/about/</guid>
       <description>Lorem ipsum dolor sit amet, ex has sale ullum corrumpit, sea dicam nostrum sensibus ad. Porro tritani persecuti te sed. Omittam dissentias pro ex. Atqui luptatum duo id. Eros minim eam ex, novum elitr accusam quo in. Nec ne audire euripidis, mea qualisque consetetur cu. Suspendisse volutpat sem a risus euismod convallis.
 In modus congue feugait eos. In nec nonumy volutpat corrumpit, sea assentior quaerendum no, cum affert scripta ea. No nihil voluptaria pro.</description>
     </item>
     
     <item>
       <title>Combining inset plots with facets using ggplot</title>
-      <link>https://clarewest.github.io/blogg/post/2019-08-27-combining-inset-plots-with-facets-using-ggplot/</link>
+      <link>https://clarewest.github.io/blog/post/2019-08-27-combining-inset-plots-with-facets-using-ggplot/</link>
       <pubDate>Tue, 27 Aug 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://clarewest.github.io/blogg/post/2019-08-27-combining-inset-plots-with-facets-using-ggplot/</guid>
+      <guid>https://clarewest.github.io/blog/post/2019-08-27-combining-inset-plots-with-facets-using-ggplot/</guid>
       <description>&lt;p&gt;I recently spent some time working out how to include mini inset plots
 within ggplot facets, and I thought I would share my code in case anyone
 else wants to achieve a similar thing.&lt;/p&gt;</description>
@@ -104,19 +104,19 @@ else wants to achieve a similar thing.&lt;/p&gt;</description>
     
     <item>
       <title>Brief introduction to ggpairs</title>
-      <link>https://clarewest.github.io/blogg/post/2019-06-11-brief-introduction-to-ggpairs/</link>
+      <link>https://clarewest.github.io/blog/post/2019-06-11-brief-introduction-to-ggpairs/</link>
       <pubDate>Tue, 11 Jun 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://clarewest.github.io/blogg/post/2019-06-11-brief-introduction-to-ggpairs/</guid>
+      <guid>https://clarewest.github.io/blog/post/2019-06-11-brief-introduction-to-ggpairs/</guid>
       <description>&lt;p&gt;In this blog post I will introduce a fun R plot, ggpairs, that&amp;rsquo;s useful for exploring distributions and correlations.&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>Not-proteins in Parliament</title>
-      <link>https://clarewest.github.io/blogg/post/not-proteins-in-parliament/</link>
+      <link>https://clarewest.github.io/blog/post/not-proteins-in-parliament/</link>
       <pubDate>Tue, 11 Jun 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://clarewest.github.io/blogg/post/not-proteins-in-parliament/</guid>
+      <guid>https://clarewest.github.io/blog/post/not-proteins-in-parliament/</guid>
       <description>&lt;p&gt;Last term I took a break from folding proteins to spend three months working in Westminster at the &lt;a href=&#34;https://www.parliament.uk/post&#34;&gt;Parliamentary Office of Science and Technology (POST)&lt;/a&gt;.&lt;/p&gt;</description>
     </item>
     
