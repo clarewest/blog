@@ -2,152 +2,152 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tags on Clare&#39;s Blog</title>
-    <link>https://clarewest.github.io/blog-hugo/tags/</link>
+    <link>https://clarewest.github.io/blogg/tags/</link>
     <description>Recent content in Tags on Clare&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Wed, 09 Sep 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://clarewest.github.io/blog-hugo/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 09 Sep 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://clarewest.github.io/blogg/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>DT</title>
-      <link>https://clarewest.github.io/blog-hugo/tags/dt/</link>
+      <link>https://clarewest.github.io/blogg/tags/dt/</link>
       <pubDate>Wed, 09 Sep 2020 00:00:00 +0000</pubDate>
       
-      <guid>https://clarewest.github.io/blog-hugo/tags/dt/</guid>
+      <guid>https://clarewest.github.io/blogg/tags/dt/</guid>
       <description></description>
     </item>
     
     <item>
       <title>formattable</title>
-      <link>https://clarewest.github.io/blog-hugo/tags/formattable/</link>
+      <link>https://clarewest.github.io/blogg/tags/formattable/</link>
       <pubDate>Wed, 09 Sep 2020 00:00:00 +0000</pubDate>
       
-      <guid>https://clarewest.github.io/blog-hugo/tags/formattable/</guid>
+      <guid>https://clarewest.github.io/blogg/tags/formattable/</guid>
       <description></description>
     </item>
     
     <item>
       <title>reactable</title>
-      <link>https://clarewest.github.io/blog-hugo/tags/reactable/</link>
+      <link>https://clarewest.github.io/blogg/tags/reactable/</link>
       <pubDate>Wed, 09 Sep 2020 00:00:00 +0000</pubDate>
       
-      <guid>https://clarewest.github.io/blog-hugo/tags/reactable/</guid>
+      <guid>https://clarewest.github.io/blogg/tags/reactable/</guid>
       <description></description>
     </item>
     
     <item>
       <title>shiny</title>
-      <link>https://clarewest.github.io/blog-hugo/tags/shiny/</link>
+      <link>https://clarewest.github.io/blogg/tags/shiny/</link>
       <pubDate>Wed, 09 Sep 2020 00:00:00 +0000</pubDate>
       
-      <guid>https://clarewest.github.io/blog-hugo/tags/shiny/</guid>
+      <guid>https://clarewest.github.io/blogg/tags/shiny/</guid>
       <description></description>
     </item>
     
     <item>
       <title>packages</title>
-      <link>https://clarewest.github.io/blog-hugo/tags/packages/</link>
+      <link>https://clarewest.github.io/blogg/tags/packages/</link>
       <pubDate>Thu, 23 Apr 2020 00:00:00 +0000</pubDate>
       
-      <guid>https://clarewest.github.io/blog-hugo/tags/packages/</guid>
+      <guid>https://clarewest.github.io/blogg/tags/packages/</guid>
       <description></description>
     </item>
     
     <item>
       <title>roxygen2</title>
-      <link>https://clarewest.github.io/blog-hugo/tags/roxygen2/</link>
+      <link>https://clarewest.github.io/blogg/tags/roxygen2/</link>
       <pubDate>Thu, 23 Apr 2020 00:00:00 +0000</pubDate>
       
-      <guid>https://clarewest.github.io/blog-hugo/tags/roxygen2/</guid>
+      <guid>https://clarewest.github.io/blogg/tags/roxygen2/</guid>
       <description></description>
     </item>
     
     <item>
       <title>testthat</title>
-      <link>https://clarewest.github.io/blog-hugo/tags/testthat/</link>
+      <link>https://clarewest.github.io/blogg/tags/testthat/</link>
       <pubDate>Thu, 23 Apr 2020 00:00:00 +0000</pubDate>
       
-      <guid>https://clarewest.github.io/blog-hugo/tags/testthat/</guid>
+      <guid>https://clarewest.github.io/blogg/tags/testthat/</guid>
       <description></description>
     </item>
     
     <item>
       <title>usethis</title>
-      <link>https://clarewest.github.io/blog-hugo/tags/usethis/</link>
+      <link>https://clarewest.github.io/blogg/tags/usethis/</link>
       <pubDate>Thu, 23 Apr 2020 00:00:00 +0000</pubDate>
       
-      <guid>https://clarewest.github.io/blog-hugo/tags/usethis/</guid>
+      <guid>https://clarewest.github.io/blogg/tags/usethis/</guid>
       <description></description>
     </item>
     
     <item>
       <title>upsetr</title>
-      <link>https://clarewest.github.io/blog-hugo/tags/upsetr/</link>
+      <link>https://clarewest.github.io/blogg/tags/upsetr/</link>
       <pubDate>Thu, 26 Mar 2020 00:00:00 +0000</pubDate>
       
-      <guid>https://clarewest.github.io/blog-hugo/tags/upsetr/</guid>
+      <guid>https://clarewest.github.io/blogg/tags/upsetr/</guid>
       <description></description>
     </item>
     
     <item>
       <title>jq</title>
-      <link>https://clarewest.github.io/blog-hugo/tags/jq/</link>
+      <link>https://clarewest.github.io/blogg/tags/jq/</link>
       <pubDate>Tue, 03 Mar 2020 00:00:00 +0000</pubDate>
       
-      <guid>https://clarewest.github.io/blog-hugo/tags/jq/</guid>
+      <guid>https://clarewest.github.io/blogg/tags/jq/</guid>
       <description></description>
     </item>
     
     <item>
       <title>json</title>
-      <link>https://clarewest.github.io/blog-hugo/tags/json/</link>
+      <link>https://clarewest.github.io/blogg/tags/json/</link>
       <pubDate>Tue, 03 Mar 2020 00:00:00 +0000</pubDate>
       
-      <guid>https://clarewest.github.io/blog-hugo/tags/json/</guid>
+      <guid>https://clarewest.github.io/blogg/tags/json/</guid>
       <description></description>
     </item>
     
     <item>
       <title>ggplot2</title>
-      <link>https://clarewest.github.io/blog-hugo/tags/ggplot2/</link>
+      <link>https://clarewest.github.io/blogg/tags/ggplot2/</link>
       <pubDate>Tue, 27 Aug 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://clarewest.github.io/blog-hugo/tags/ggplot2/</guid>
+      <guid>https://clarewest.github.io/blogg/tags/ggplot2/</guid>
       <description></description>
     </item>
     
     <item>
       <title>ggpairs</title>
-      <link>https://clarewest.github.io/blog-hugo/tags/ggpairs/</link>
+      <link>https://clarewest.github.io/blogg/tags/ggpairs/</link>
       <pubDate>Tue, 11 Jun 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://clarewest.github.io/blog-hugo/tags/ggpairs/</guid>
+      <guid>https://clarewest.github.io/blogg/tags/ggpairs/</guid>
       <description></description>
     </item>
     
     <item>
       <title>internship</title>
-      <link>https://clarewest.github.io/blog-hugo/tags/internship/</link>
+      <link>https://clarewest.github.io/blogg/tags/internship/</link>
       <pubDate>Tue, 11 Jun 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://clarewest.github.io/blog-hugo/tags/internship/</guid>
+      <guid>https://clarewest.github.io/blogg/tags/internship/</guid>
       <description></description>
     </item>
     
     <item>
       <title>phd</title>
-      <link>https://clarewest.github.io/blog-hugo/tags/phd/</link>
+      <link>https://clarewest.github.io/blogg/tags/phd/</link>
       <pubDate>Tue, 11 Jun 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://clarewest.github.io/blog-hugo/tags/phd/</guid>
+      <guid>https://clarewest.github.io/blogg/tags/phd/</guid>
       <description></description>
     </item>
     
     <item>
       <title>policy</title>
-      <link>https://clarewest.github.io/blog-hugo/tags/policy/</link>
+      <link>https://clarewest.github.io/blogg/tags/policy/</link>
       <pubDate>Tue, 11 Jun 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://clarewest.github.io/blog-hugo/tags/policy/</guid>
+      <guid>https://clarewest.github.io/blogg/tags/policy/</guid>
       <description></description>
     </item>
     
