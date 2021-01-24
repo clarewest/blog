@@ -36,25 +36,9 @@
 &lt;script src=&#34;{{&lt; blogdown/postref &gt;}}index_files/selectize/selectize.min.js&#34;&gt;&lt;/script&gt;
 &lt;link href=&#34;{{&lt; blogdown/postref &gt;}}index_files/font-awesome/css/all.min.css&#34; rel=&#34;stylesheet&#34; /&gt;
 &lt;link href=&#34;{{&lt; blogdown/postref &gt;}}index_files/font-awesome/css/v4-shims.min.css&#34; rel=&#34;stylesheet&#34; /&gt;
-&lt;script src=&#34;{{&lt; blogdown/postref &gt;}}index_files/core-js/shim.min.js&#34;&gt;&lt;/script&gt;
-&lt;script src=&#34;{{&lt; blogdown/postref &gt;}}index_files/react/react.min.js&#34;&gt;&lt;/script&gt;
-&lt;script src=&#34;{{&lt; blogdown/postref &gt;}}index_files/react/react-dom.min.js&#34;&gt;&lt;/script&gt;
-&lt;script src=&#34;{{&lt; blogdown/postref &gt;}}index_files/reactwidget/react-tools.js&#34;&gt;&lt;/script&gt;
-&lt;script src=&#34;{{&lt; blogdown/postref &gt;}}index_files/reactable-binding/reactable.js&#34;&gt;&lt;/script&gt;
 
 
-&lt;style type=&#34;text/css&#34;&gt;
-h1, .h1, h2, .h2, h3, .h3 {
-    margin-top: 40px;
-}
-
-h4, .h4, h5, .h5 {
-    margin-top: 40px;
-}
-
-&lt;/style&gt;
-&lt;hr /&gt;
-&lt;p&gt;&lt;em&gt;Summary: In this blog post I demonstrate the basics of each package, with some formatting examples. All three are nice, but I have a preference for DT because it’s quick and highly customisable. I include some extra DT examples including how to include icons, images, tooltips, heatmap-style column fills, abbreviated column output, and how to make very simple tables.&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;In this blog post I demonstrate the basics of each package, with some formatting examples. All three are nice, but I have a preference for DT because it’s quick and highly customisable. I include some extra DT examples including how to include icons, images, tooltips, heatmap-style column fills, abbreviated column output, and how to make very simple tables.&lt;/p&gt;
 </description>
     </item>
     
