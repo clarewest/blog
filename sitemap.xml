@@ -23,11 +23,6 @@
   </url>
   
   <url>
-    <loc>https://clarewest.github.io/blog/tags/packages/</loc>
-    <lastmod>2021-01-25T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://clarewest.github.io/blog/post/</loc>
     <lastmod>2021-01-25T00:00:00+00:00</lastmod>
   </url>
@@ -53,17 +48,7 @@
   </url>
   
   <url>
-    <loc>https://clarewest.github.io/blog/tags/sql/</loc>
-    <lastmod>2021-01-25T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://clarewest.github.io/blog/tags/</loc>
-    <lastmod>2021-01-25T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://clarewest.github.io/blog/tags/tidymodels/</loc>
     <lastmod>2021-01-25T00:00:00+00:00</lastmod>
   </url>
   
@@ -84,6 +69,11 @@
   
   <url>
     <loc>https://clarewest.github.io/blog/post/making-tables-shiny/</loc>
+    <lastmod>2020-09-09T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://clarewest.github.io/blog/tags/packages/</loc>
     <lastmod>2020-09-09T00:00:00+00:00</lastmod>
   </url>
   

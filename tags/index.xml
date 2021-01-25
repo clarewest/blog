@@ -26,15 +26,6 @@
     </item>
     
     <item>
-      <title>packages</title>
-      <link>https://clarewest.github.io/blog/tags/packages/</link>
-      <pubDate>Mon, 25 Jan 2021 00:00:00 +0000</pubDate>
-      
-      <guid>https://clarewest.github.io/blog/tags/packages/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>rstudio</title>
       <link>https://clarewest.github.io/blog/tags/rstudio/</link>
       <pubDate>Mon, 25 Jan 2021 00:00:00 +0000</pubDate>
@@ -49,24 +40,6 @@
       <pubDate>Mon, 25 Jan 2021 00:00:00 +0000</pubDate>
       
       <guid>https://clarewest.github.io/blog/tags/shiny/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>SQL</title>
-      <link>https://clarewest.github.io/blog/tags/sql/</link>
-      <pubDate>Mon, 25 Jan 2021 00:00:00 +0000</pubDate>
-      
-      <guid>https://clarewest.github.io/blog/tags/sql/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>tidymodels</title>
-      <link>https://clarewest.github.io/blog/tags/tidymodels/</link>
-      <pubDate>Mon, 25 Jan 2021 00:00:00 +0000</pubDate>
-      
-      <guid>https://clarewest.github.io/blog/tags/tidymodels/</guid>
       <description></description>
     </item>
     
@@ -94,6 +67,15 @@
       <pubDate>Wed, 09 Sep 2020 00:00:00 +0000</pubDate>
       
       <guid>https://clarewest.github.io/blog/tags/formattable/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>packages</title>
+      <link>https://clarewest.github.io/blog/tags/packages/</link>
+      <pubDate>Wed, 09 Sep 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://clarewest.github.io/blog/tags/packages/</guid>
       <description></description>
     </item>
     
