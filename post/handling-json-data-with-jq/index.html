@@ -31,6 +31,8 @@
     <link rel="stylesheet" href="https://clarewest.github.io/blog/css/custom.css" />
     
     
+    <script id="twitter-wjs" type="text/javascript" async defer src="//platform.twitter.com/widgets.js"></script>
+    
     <link href="https://clarewest.github.io/blog/lib/datatables-css-0.0.0/datatables-crosstalk.css" rel="stylesheet" />
     <link href="https://clarewest.github.io/blog/lib/dt-core-1.10.20/css/jquery.dataTables.min.css" rel="stylesheet" />
     <link href="https://clarewest.github.io/blog/lib/dt-core-1.10.20/css/jquery.dataTables.extra.css" rel="stylesheet" />
@@ -57,7 +59,7 @@
 
 <body>
     
-    <div class="mt-xl header">
+<div class="mt-xl header">
     <div class="container">
         <div class="row justify-content-center">
             <div class="col-auto">
@@ -103,13 +105,46 @@
     </div>
 </div>
 
-    <div class="content">
-        <div class="container">
-            <div class="row justify-content-center">
-                <div class="col-sm-12 col-lg-8">
-                    <h1 class="mx-0 mx-md-4">Handling JSON data with jq</h1>
-                    <div class="markdown">
-                        
+<div class="content">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-sm-12 col-lg-8">
+                <h1 class="mx-0 mx-md-4 blog-post-title">Handling JSON data with jq</h1>
+
+                <div class="mb-md-4 meta">
+                    
+                    
+                    <span class="author" title="CE West">
+                        CE West
+                    </span>
+                    
+                    
+
+                    <span class="date middot" title='Tue Mar 3 2020 00:00:00 UTC'>
+                        2020-03-03
+                    </span>
+
+                    <span class="reading-time middot">
+                        3 min read
+                    </span>
+
+                    <div class="d-none d-md-inline tags">
+                        <ul class="list-unstyled d-inline">
+                            
+                            <li class="d-inline middot">
+                                <a href="https://clarewest.github.io/blog/tags/json">json</a>
+                            </li>
+                            
+                            <li class="d-inline middot">
+                                <a href="https://clarewest.github.io/blog/tags/jq">jq</a>
+                            </li>
+                            
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="markdown blog-post-content">
+                    
     <p>For a new project I&rsquo;ve unwillingly transitioned from the safety and comfort of CSV files to a scary new world of JSON files.</p>
 <p><a href="https://stedolan.github.io/jq/">jq</a> is a command-line JSON processor that was recommended to me by a colleague. Being written in C with no dependencies, it&rsquo;s very <a href="https://stedolan.github.io/jq/download/">easy to install</a>.</p>
 <p>Here&rsquo;s what won me over:</p>
@@ -186,13 +221,15 @@ clare$ cat test.json | jq '.polymerDescriptions[].length'
 <p>See the <a href="https://stedolan.github.io/jq/manual/">jq manual</a> for more information and lots of other cool things you can do!</p>
 
 
-                    </div>
                 </div>
+
+                
             </div>
         </div>
     </div>
+</div>
 
-    <section id="comments">
+<section id="comments">
     <div class="py-3 content">
         <div class="container">
             <div class="row justify-content-center">
@@ -207,7 +244,7 @@ clare$ cat test.json | jq '.polymerDescriptions[].length'
         </div>
     </div>
 </section>
-    <footer class="site-footer">
+<footer class="site-footer">
 <div class="content">
     <div class="container">
         <div class="row justify-content-center">

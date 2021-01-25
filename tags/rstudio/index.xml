@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>rstudio on Clare&#39;s Blog</title>
+    <link>https://clarewest.github.io/blog/tags/rstudio/</link>
+    <description>Recent content in rstudio on Clare&#39;s Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Mon, 25 Jan 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://clarewest.github.io/blog/tags/rstudio/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>rstudio::global(2021) %&gt;% summarise()</title>
+      <link>https://clarewest.github.io/blog/post/rstudio-global-2021-summarise/</link>
+      <pubDate>Mon, 25 Jan 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://clarewest.github.io/blog/post/rstudio-global-2021-summarise/</guid>
+      <description>rstudio’s annual conference went online and global this year, which meant that I could attend for the first time. There were lots of interesting talks, and it was great to see familiar faces from GitHub/Twitter avatars come to life! This is a summary of the notes I took during the talks I attended, I will add links to the full talks on the rstudio website when they become available.</description>
+    </item>
+    
+  </channel>
+</rss>

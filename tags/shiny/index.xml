@@ -6,7 +6,16 @@
     <description>Recent content in shiny on Clare&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Wed, 09 Sep 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://clarewest.github.io/blog/tags/shiny/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 25 Jan 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://clarewest.github.io/blog/tags/shiny/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>rstudio::global(2021) %&gt;% summarise()</title>
+      <link>https://clarewest.github.io/blog/post/rstudio-global-2021-summarise/</link>
+      <pubDate>Mon, 25 Jan 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://clarewest.github.io/blog/post/rstudio-global-2021-summarise/</guid>
+      <description>rstudio’s annual conference went online and global this year, which meant that I could attend for the first time. There were lots of interesting talks, and it was great to see familiar faces from GitHub/Twitter avatars come to life! This is a summary of the notes I took during the talks I attended, I will add links to the full talks on the rstudio website when they become available.</description>
+    </item>
+    
     <item>
       <title>Making Tables Shiny: DT, formattable, and reactable</title>
       <link>https://clarewest.github.io/blog/post/making-tables-shiny/</link>
