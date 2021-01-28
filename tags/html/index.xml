@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>html on Clare&#39;s Blog</title>
+    <link>https://clarewest.github.io/blog/tags/html/</link>
+    <description>Recent content in html on Clare&#39;s Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Thu, 28 Jan 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://clarewest.github.io/blog/tags/html/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Claps and Comments in Blogdown</title>
+      <link>https://clarewest.github.io/blog/post/claps-and-comments-in-blogdown/</link>
+      <pubDate>Thu, 28 Jan 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://clarewest.github.io/blog/post/claps-and-comments-in-blogdown/</guid>
+      <description>&lt;p&gt;I don&amp;rsquo;t track visitors on this blog, and while that is nice for their privacy and for my conscience, it does sometimes feel like talking into the void. So I recently added three features for readers to communicate: comment functionality via &lt;a href=&#34;https://utteranc.es/&#34;&gt;utterances&lt;/a&gt;, an &lt;a href=&#34;https://applause-button.com/&#34;&gt;&lt;code&gt;applause-button&lt;/code&gt;&lt;/a&gt; by &lt;a href=&#34;https://github.com/ColinEberhardt/&#34;&gt;Colin Eberhardt&lt;/a&gt;, and some buttons for sharing posts to social media.&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>
