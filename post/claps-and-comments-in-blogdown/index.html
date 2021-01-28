@@ -1,0 +1,408 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title> Claps and Comments in Blogdown - Clare&#39;s Blog </title>
+    <meta name="HandheldFriendly" content="True">
+    <meta name="MobileOptimized" content="320">
+    <meta name="referrer" content="strict-origin">
+    <meta name="description" content="How to include an applause button, comments, and social media sharing links on your blogdown website" />
+    <meta property="og:site_name" content="Clare&#39;s Blog" />
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:type" content="article" />
+    <meta property="og:url" content="https://clarewest.github.io/blog/post/claps-and-comments-in-blogdown/" />
+    <meta property="og:title" content="Claps and Comments in Blogdown" />
+    <meta property="og:image" content="https://clarewest.github.io/blog/post/claps-and-comments-in-blogdown/images/comments_and_claps.png"/>
+    <meta property="og:description" content="How to include an applause button, comments, and social media sharing links on your blogdown website" />
+
+    <meta name="twitter:card" content="twitter-summary-large" />
+    
+    <meta name="twitter:site" content="@claree_west">
+    <meta name="twitter:creator" content="@claree_west">
+    
+    <meta name="twitter:title" content="Claps and Comments in Blogdown" />
+    <meta name="twitter:description" content="How to include an applause button, comments, and social media sharing links on your blogdown website" />
+    <meta name="twitter:image" content="https://clarewest.github.io/blog/post/claps-and-comments-in-blogdown/images/comments_and_claps.png " />
+
+    <link rel="canonical" href="https://clarewest.github.io/blog/post/claps-and-comments-in-blogdown/">
+    <link rel="stylesheet" href="https://clarewest.github.io/blog//font-awesome-4.7.0/css/font-awesome.min.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha512-MoRNloxbStBcD8z3M/2BmnT+rg4IsMxPkXaGh2zD6LGNNFE80W3onsAhRcMAMrSoyWL9xD7Ert0men7vR8LUZg==" crossorigin="anonymous" />
+
+    <link rel="stylesheet" href="https://clarewest.github.io/blog//css/custom.css" />
+    
+    
+    <script id="twitter-wjs" type="text/javascript" async defer src="//platform.twitter.com/widgets.js"></script>
+    
+    <link href="https://clarewest.github.io/blog//lib/datatables-css-0.0.0/datatables-crosstalk.css" rel="stylesheet" />
+    <link href="https://clarewest.github.io/blog//lib/dt-core-1.10.20/css/jquery.dataTables.min.css" rel="stylesheet" />
+    <link href="https://clarewest.github.io/blog//lib/dt-core-1.10.20/css/jquery.dataTables.extra.css" rel="stylesheet" />
+    <link href="https://clarewest.github.io/blog//lib/crosstalk-1.1.0.1/css/crosstalk.css" rel="stylesheet" />
+    <script src="https://clarewest.github.io/blog//lib/htmlwidgets-1.5.1/htmlwidgets.js"></script>
+    <script src="https://clarewest.github.io/blog//lib/jquery-1.12.4/jquery.min.js"></script>
+    <script src="https://clarewest.github.io/blog//lib/datatables-binding-0.14/datatables.js"></script>
+    <script src="https://clarewest.github.io/blog//lib/dt-core-1.10.20/js/jquery.dataTables.min.js"></script>
+    <script src="https://clarewest.github.io/blog//lib/crosstalk-1.1.0.1/js/crosstalk.min.js"></script>
+    
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.2.0/styles/github-gist.min.css" integrity="sha512-od7JLoOTxM8w/HSKGzP9Kexc20K9p/M2zxSWsd7H1e4Ctf+8SQFtCWEZnW5u6ul5ehSECa5QmOk9ju2nQMmlVA==" crossorigin="anonymous" />
+    
+
+    
+
+    <link rel="shortcut icon"
+        href="https://clarewest.github.io/blog/images/favicon.png">
+
+    
+    <link href="https://clarewest.github.io/blog/index.xml" rel="alternate" type="application/rss+xml" title="Clare&#39;s Blog" />
+    
+    
+      
+  <link rel="stylesheet" href="https://unpkg.com/applause-button@3.4.0/dist/applause-button.css">
+  <script src="https://unpkg.com/applause-button@3.4.0/dist/applause-button.js"></script>
+  
+</head>
+
+<body>
+  
+    
+<div class="mt-xl header">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-auto">
+                <a href="https://clarewest.github.io/blog/">
+                    <h1 class="name">Clare&#39;s Blog</h1>
+                </a>
+            </div>
+        </div>
+
+        <div class="row justify-content-center">
+            <ul class="nav nav-primary">
+                
+                <li class="nav-item">
+                    <a class="nav-link" href="https://clarewest.github.io/blog/">
+                        
+                        Home
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link" href="https://github.com/clarewest">
+                        
+                        GitHub
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link" href="https://twitter.com/claree_west">
+                        
+                        Twitter
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link" href="https://clarewest.github.io">
+                        
+                        Website
+                    </a>
+                </li>
+                
+            </ul>
+        </div>
+    </div>
+</div>
+
+<div class="content">
+    <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-lg-1 justify-content-right">
+              <applause-button style="width: 50px; height: 50px;" multiclap="true" url="https://clarewest.github.io/blog/post/claps-and-comments-in-blogdown/"/>
+          </div>
+            <div class="col-sm-12 col-lg-8">
+                <h1 class="mx-0 mx-md-4 blog-post-title">Claps and Comments in Blogdown</h1>
+
+                <div class="mb-md-4 meta">
+                    
+                    
+                    <span class="author" title="CE West">
+                        CE West
+                    </span>
+                    
+                    
+
+                    <span class="date middot" title='Thu Jan 28 2021 00:00:00 UTC'>
+                        2021-01-28
+                    </span>
+
+                    <span class="reading-time middot">
+                        6 min read
+                    </span>
+
+                    <div class="d-none d-md-inline tags">
+                        <ul class="list-unstyled d-inline">
+                            
+                            <li class="d-inline middot">
+                                <a href="https://clarewest.github.io/blog/tags/blogdown">blogdown</a>
+                            </li>
+                            
+                            <li class="d-inline middot">
+                                <a href="https://clarewest.github.io/blog/tags/html">html</a>
+                            </li>
+                            
+                            <li class="d-inline middot">
+                                <a href="https://clarewest.github.io/blog/tags/utterances">utterances</a>
+                            </li>
+                            
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="markdown blog-post-content">
+                    
+    <p>I don&rsquo;t track visitors on this blog, and while that is nice for their privacy and for my conscience, it does sometimes feel like talking into the void. So I recently added three features for readers to communicate: comment functionality via <a href="https://utteranc.es/">utterances</a>, an <a href="https://applause-button.com/"><code>applause-button</code></a> by <a href="https://github.com/ColinEberhardt/">Colin Eberhardt</a>, and some buttons for sharing posts to social media.</p>
+<div class="figure">
+<p><img src="images/comments_and_claps.png" alt=""></p>
+<p class="caption">Comments, claps and social media buttons</p>
+</div>
+<h4 id="-utterances">💬 Utterances</h4>
+<p><a href="https://utteranc.es/">Utterances</a> is an open source comment widget built on GitHub issues. I really like how lightweight and unobtrusive it is. Not to mention, it was ridiculously easy to set up.</p>
+<p>The <a href="https://utteranc.es/">utterances documentation</a> even walks you through your options and generates the script to add to your site. The process is:</p>
+<ol>
+<li>Choose or make a GitHub repo where the issues will live, and make sure the <a href="https://github.com/apps/utterances">utterances app</a> is installed on it, so it can post issues and comments: <a href="https://github.com/clarewest/blog-comments">clarewest/blog-comments</a></li>
+<li>Choose how you want your blog-post-to-GitHub-issue mapping to work (I&rsquo;m using path name, so the title of each issue is the path to the blog post: <a href="https://github.com/clarewest/blog-comments/issues">clarewest/blog-comments/issues</a></li>
+<li>(Optional) Choose a label that will be assigned to the issues on the repo</li>
+<li>Choose your colour scheme (mine is GitHub light #basic)</li>
+<li>Get your script, which will look something like this:</li>
+</ol>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">&lt;script src=<span style="color:#a31515">&#34;https://utteranc.es/client.js&#34;</span>
+        repo=<span style="color:#a31515">&#34;clarewest/blog-comments&#34;</span>
+        issue-term=<span style="color:#a31515">&#34;pathname&#34;</span>
+        label=<span style="color:#a31515">&#34;comment&#34;</span>
+        theme=<span style="color:#a31515">&#34;github-light&#34;</span>
+        crossorigin=<span style="color:#a31515">&#34;anonymous&#34;</span>
+        async&gt;
+&lt;/script&gt;
+</code></pre></div><p>If you&rsquo;re on blogdown, your theme may already support utterances. In that case, you don&rsquo;t even have to put this script in yourself. It&rsquo;s okay to feel a little smug if you chose a theme like this.</p>
+<p>In my case, this was already in <code>layouts/partial/utterances.html</code>:</p>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">&lt;section id=<span style="color:#a31515">&#34;comments&#34;</span>&gt;
+    &lt;div class=<span style="color:#a31515">&#34;py-3 content&#34;</span>&gt;
+        &lt;div class=<span style="color:#a31515">&#34;container&#34;</span>&gt;
+            &lt;div class=<span style="color:#a31515">&#34;row justify-content-center&#34;</span>&gt;
+                &lt;div class=<span style="color:#a31515">&#34;col-sm-12 col-lg-8&#34;</span>&gt;
+                    &lt;div class=<span style="color:#a31515">&#34;comments&#34;</span>&gt;
+                        &lt;script src=<span style="color:#a31515">&#34;https://utteranc.es/client.js&#34;</span> repo=<span style="color:#a31515">&#34;{{ .Site.Params.commentsrepo }}&#34;</span>
+                            issue-term=<span style="color:#a31515">&#34;pathname&#34;</span> label=<span style="color:#a31515">&#34;comment&#34;</span> theme=<span style="color:#a31515">&#34;github-light&#34;</span> crossorigin=<span style="color:#a31515">&#34;anonymous&#34;</span> async&gt;
+                            &lt;/script&gt;
+                    &lt;/div&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/section&gt;
+</code></pre></div><p>As you can see, the theme author has included a <code>.Site.Params</code> variable called <code>commentsrepo</code> that I can use, so all I had to do is add this to my <code>config.yaml</code> file:</p>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">params:
+  commentsrepo: clarewest/blog-comments
+</code></pre></div><p>And just like that, we have comments! Your readers have to have a GitHub account in order to leave comments, which is a blessing or a curse, depending on your point of view.</p>
+<p>If you are interested in migrating from Disqus and want to keep your comments, check out <a href="https://nanx.me/blog/post/migrating-from-disqus-to-utterances/">this blog post</a> by Nan Xiao.</p>
+<h4 id="-applause">👏 Applause</h4>
+<p>Every millenial knows that commenting is intimidating. A nice amiable non-verbal &lsquo;like&rsquo; is my preferred way to show appreciation.</p>
+<p>I found this brilliant <a href="https://applause-button.com/"><code>applause-button</code></a> by <a href="https://github.com/ColinEberhardt/">Colin Eberhardt</a>, which allows you to leave a friendly little clap of appreciation.</p>
+<p>Include the small JavaScript and CSS files in your header (either download or source them from the website above):</p>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">&lt;head&gt;
+  &lt;link rel=<span style="color:#a31515">&#34;stylesheet&#34;</span> href=<span style="color:#a31515">&#34;applause-button.css&#34;</span> /&gt;
+  &lt;script src=<span style="color:#a31515">&#34;applause-button.js&#34;</span>&gt;&lt;/script&gt;
+&lt;/head&gt;
+</code></pre></div><p>Then insert the element wherever you want:</p>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">&lt;div class=<span style="color:#a31515">&#34;container&#34;</span>&gt;
+  &lt;applause-button style=<span style="color:#a31515">&#34;width: 58px; height: 58px;&#34;</span>/&gt;
+&lt;/div&gt;
+</code></pre></div><div class="container">
+<applause-button style="width: 58px; height: 58px;"/>
+</div>
+<p>It seems super easy, but I had a couple of problems that left me a bit perplexed (okay fine, I sulked and ate half a toblerone).</p>
+<p>First, I had trouble making the button display the total number of claps. The number 1 appeared when I clicked it, but didn&rsquo;t survive a page refresh.</p>
+<p>You can see the number of claps recorded for a page through a request to the API:</p>
+<pre><code class="language-commandline" data-lang="commandline">curl -e robot https://api.applause-button.com/get-claps?url=https://clarewest.github.io/blog/post/claps-and-comments-in-blogdown/
+1
+</code></pre><p>This is also how the JavaScript fetches the number of claps to display on the page. Calling the API showed I had some claps for the page, but they weren&rsquo;t showing up on the applause button on the website.</p>
+<p>Eventually, I worked out the problem(s):</p>
+<ol>
+<li>The button automatically gets the number of claps for a URL based on the HTTP Referer header, or you can specify the URL using <code>url = &quot;my/blog/post/url&quot;</code>.</li>
+<li>The API ignores requests without a Referer specified as a way of screening out bots.</li>
+</ol>
+<p>The <a href="https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Referer">Referer request header</a> contains the address of a page making a request, so that the server can identify where the request is coming from. A request might be, for example, following a link to another website, or, in this case, an API call.</p>
+<p>You can <a href="https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Referrer-Policy">control how much information is sent in the Referer request header</a> using a meta element in the HTML page. The default is <code>no-referrer-when-downgrade</code>, which means send my URL unless it&rsquo;s going to a domain less secure than mine (i.e. HTTPS -&gt; HTTP).</p>
+<p>My problem was that my referrer was set to <code>&quot;no-referrer&quot;</code> which sends an empty string - this meant that the script couldn&rsquo;t send the blog post&rsquo;s URL with the request automatically, and, even when I specified the URL explicitly, the API calls from my blog posts were being ignored because I had sent no Referer. As a result the number of claps wasn&rsquo;t being displayed.</p>
+<p>I changed my header tag from <code>no-referrer</code> to <code>strict-origin</code>, which sends the origin of the URL, unless it&rsquo;s to a less secure destination.</p>
+<p>You could also use <code>{{ .Permalink }}</code>, the Hugo parameter for the URL of the page, but I&rsquo;m not sure where else this will be used so I thought it would be better not to use the entire URL if I can help it. If you know more about this and think I made a bad choice, please let me know!</p>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">&lt;meta name=<span style="color:#a31515">&#34;referrer&#34;</span> content=<span style="color:#a31515">&#34;no-referrer&#34;</span>&gt;       <span style="color:#008000">&lt;!-- no claps for you --&gt;</span>
+&lt;meta name=<span style="color:#a31515">&#34;referrer&#34;</span> content=<span style="color:#a31515">&#34;strict-origin&#34;</span>&gt;  
+</code></pre></div><p>I also explicitly included the URL in the element in each blog post, to make sure the count still works. To include this button in each blog post, I added the element to my <code>single.html</code> partial template.</p>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">&lt;applause-button style=<span style="color:#a31515">&#34;width: 50px; height: 50px;&#34;</span> multiclap=<span style="color:#a31515">&#34;true&#34;</span> url=<span style="color:#a31515">&#34;{{ .Permalink }}&#34;</span>/&gt;
+</code></pre></div><p>The <code>multiclap=&quot;true&quot;</code> means that one user can clap more than once - so, go crazy!</p>
+<p>I originally just put it at the bottom, but a cruel-but-kind friend pointed out that I should put it at the top too, as people are much less likely to reach the end of the post.</p>
+<h3 id="-share-to-social-media">💌 Share to Social Media</h3>
+<p>Finally, I wanted to add some buttons at the bottom of my post to make it easy to share the post.</p>
+<p>I found <a href="http://hugocodex.org/add-ons/share-buttons/">a script for that from hugocodex.org</a>, a website by J.H. van der Schee showcasing Hugo scripts. It includes icons with sharing links for a range of social medias (including the relevant fill colour on hover). You just have to download <code>share-buttons.html</code> to your <code>layouts/partials</code> directory, and include it where you want it on your website (in my case, <code>single.html</code>):</p>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">{{ partial &#34;share-buttons.html&#34; . }}
+</code></pre></div><p>The script is quite long, so I won&rsquo;t share the whole thing here, but I did make a couple of changes.</p>
+<p>First, I removed Facebook and Pinterest (personal taste) as well as Google plus (which apparently no longer exists).</p>
+<p>Second, the script uses a URL for sharing to Twitter that no longer works, so I updated it:</p>
+<p>The non-working method in the script:</p>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">&lt;div class=<span style="color:#a31515">&#34;twitter&#34;</span> title=<span style="color:#a31515">&#34;Share this on Twitter&#34;</span> onclick=<span style="color:#a31515">&#34;window.open(&#39;http://twitter.com/home?status={{ $pageurl }}&#39;);&#34;</span>&gt;
+</code></pre></div><p>The replacement method:</p>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">&lt;div class=<span style="color:#a31515">&#34;twitter&#34;</span> title=<span style="color:#a31515">&#34;Share this on Twitter&#34;</span> onclick=<span style="color:#a31515">&#34;window.open(&#39;http://twitter.com/intent/tweet?url={{ $pageurl }}&#39;);&#34;</span>&gt;
+</code></pre></div><p>And that&rsquo;s it!</p>
+<p>Please feel free to comment, clap, and share this post 🌞</p>
+
+
+                     <div class="row justify-content-center">
+   
+                <div class="blog-post-footer">
+                    <applause-button style="width: 58px; height: 58px;" multiclap="true" url="https://clarewest.github.io/blog/post/claps-and-comments-in-blogdown/"/>
+                </div>
+        <div class="blog-post-footer">
+  
+
+<style>
+#share-buttons {display: inline-block; vertical-align: middle; }
+#share-buttons:after {content: ""; display: block; clear: both;}
+#share-buttons > div {
+position: relative;
+text-align: left; 
+height: 36px; 
+width: 32px; 
+float: left; 
+text-align: center;
+}
+#share-buttons > div > svg {height: 16px; fill: #d5d5d5; margin-top: 10px;}
+#share-buttons > div:hover {cursor: pointer;}
+#share-buttons > div.facebook:hover > svg {fill: #3B5998;}
+#share-buttons > div.twitter:hover > svg {fill: #55ACEE;}
+#share-buttons > div.linkedin:hover > svg {fill: #0077b5;}
+#share-buttons > div.pinterest:hover > svg {fill: #CB2027;}
+#share-buttons > div.gplus:hover > svg {fill: #dd4b39;}
+#share-buttons > div.mail:hover > svg {fill: #7D7D7D;}
+#share-buttons > div.instagram:hover > svg {fill: #C73B92;}
+#share-buttons > div.facebook > svg {height: 18px; margin-top: 9px;}
+#share-buttons > div.twitter > svg {height: 20px; margin-top: 8px;}
+#share-buttons > div.linkedin > svg {height: 19px; margin-top: 7px;}
+#share-buttons > div.pinterest > svg {height: 20px; margin-top: 9px;}
+#share-buttons > div.mail > svg {height: 14px; margin-top: 11px;}
+</style>
+
+<span style="color: silver;">Share this post on: <br></span><div id="share-buttons">
+<div class="twitter" title="Share this on Twitter" onclick="window.open('http://twitter.com/intent/tweet?url=https:\/\/clarewest.github.io\/blog\/post\/claps-and-comments-in-blogdown\/');"><svg viewBox="0 0 1792 1792" xmlns="http://www.w3.org/2000/svg"><path d="M1684 408q-67 98-162 167 1 14 1 42 0 130-38 259.5t-115.5 248.5-184.5 210.5-258 146-323 54.5q-271 0-496-145 35 4 78 4 225 0 401-138-105-2-188-64.5t-114-159.5q33 5 61 5 43 0 85-11-112-23-185.5-111.5t-73.5-205.5v-4q68 38 146 41-66-44-105-115t-39-154q0-88 44-163 121 149 294.5 238.5t371.5 99.5q-8-38-8-74 0-134 94.5-228.5t228.5-94.5q140 0 236 102 109-21 205-78-37 115-142 178 93-10 186-50z"/></svg></div>
+<div class="linkedin" title="Share this on Linkedin" onclick="window.open('https://www.linkedin.com/shareArticle?mini=true&url=https:\/\/clarewest.github.io\/blog\/post\/claps-and-comments-in-blogdown\/&title=&summary=&source=');"><svg viewBox="0 0 1792 1792" xmlns="http://www.w3.org/2000/svg"><path d="M477 625v991h-330v-991h330zm21-306q1 73-50.5 122t-135.5 49h-2q-82 0-132-49t-50-122q0-74 51.5-122.5t134.5-48.5 133 48.5 51 122.5zm1166 729v568h-329v-530q0-105-40.5-164.5t-126.5-59.5q-63 0-105.5 34.5t-63.5 85.5q-11 30-11 81v553h-329q2-399 2-647t-1-296l-1-48h329v144h-2q20-32 41-56t56.5-52 87-43.5 114.5-15.5q171 0 275 113.5t104 332.5z"/></svg></div>
+<div class="mail" title="Share this through Email" onclick="window.open('mailto:?&body=https:\/\/clarewest.github.io\/blog\/post\/claps-and-comments-in-blogdown\/');"><svg viewBox="0 0 1792 1792" xmlns="http://www.w3.org/2000/svg"><path d="M1792 710v794q0 66-47 113t-113 47h-1472q-66 0-113-47t-47-113v-794q44 49 101 87 362 246 497 345 57 42 92.5 65.5t94.5 48 110 24.5h2q51 0 110-24.5t94.5-48 92.5-65.5q170-123 498-345 57-39 100-87zm0-294q0 79-49 151t-122 123q-376 261-468 325-10 7-42.5 30.5t-54 38-52 32.5-57.5 27-50 9h-2q-23 0-50-9t-57.5-27-52-32.5-54-38-42.5-30.5q-91-64-262-182.5t-205-142.5q-62-42-117-115.5t-55-136.5q0-78 41.5-130t118.5-52h1472q65 0 112.5 47t47.5 113z"/></svg></div>
+</div>
+
+  </div>
+</div>
+
+
+                </div>
+              
+
+                
+            </div>
+          <div class="col-lg-1 justify-content-right">
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<section id="comments">
+    <div class="py-3 content">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-sm-12 col-lg-8">
+                    <div class="comments">
+                        <script src="https://utteranc.es/client.js" repo="clarewest/blog-comments"
+                            issue-term="pathname" label="comment" theme="github-light" crossorigin="anonymous" async>
+                            </script>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<footer class="site-footer">
+<div class="content">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-sm-12 col-lg-8">
+
+                      <div class="footer-col-wrapper">
+      <div class="footer-col footer-col-1">
+        <ul class="contact-list">
+          <li class="p-name">Clare E. West</li></ul>
+      </div>
+      <div class="footer-col footer-col-2">
+        <ul class="social-media-list">
+          <li>
+            <a href="https://github.com/clarewest">
+                                  <i class="fa fa-github social-icon"></i>
+
+                <span class="username">clarewest</span>
+                </a>
+                </li>
+                <li>
+                  <a href="http://twitter.com/claree_west">
+                    <i class="fa fa-twitter social-icon"></i>
+                    <span class="username">claree_west</span></a>
+                    </li>
+                    </ul>
+      
+</div>
+
+      <div class="footer-col footer-col-3">
+        <p>Data adventures of a former biochemist.</p>
+      </div>
+      </div>
+                       
+                        
+                  </div>
+        </div>
+    </div>
+</div>
+</footer>
+
+    
+
+    
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.2.0/highlight.min.js" integrity="sha512-TDKKr+IvoqZnPzc3l35hdjpHD0m+b2EC2SrLEgKDRWpxf2rFCxemkgvJ5kfU48ip+Y+m2XVKyOCD85ybtlZDmw==" crossorigin="anonymous"></script>
+        
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.2.0/languages/r.min.js" defer></script>
+        
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.2.0/languages/python.min.js" defer></script>
+        
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.2.0/languages/stan.min.js" defer></script>
+        
+        <script>
+            window.addEventListener('load', function() {
+                hljs.initHighlighting();
+            }, true);
+        </script>
+    
+
+    
+
+    
+    
+        
+<script src="https://clarewest.github.io/blog/js/math-code.js"></script>
+<script async src="//cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+
+
+    
+
+    
+</body>
+
+
+
+</html>
