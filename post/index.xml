@@ -6,7 +6,21 @@
     <description>Recent content in Posts on Clare&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Thu, 28 Jan 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://clarewest.github.io/blog/post/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 15 Jul 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://clarewest.github.io/blog/post/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Crash course in Open Targets Part 1: Browsing and Querying Target-Disease Associations</title>
+      <link>https://clarewest.github.io/blog/post/crash-course-in-open-targets-part-1/</link>
+      <pubDate>Thu, 15 Jul 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://clarewest.github.io/blog/post/crash-course-in-open-targets-part-1/</guid>
+      <description>
+&lt;script src=&#34;{{&lt; blogdown/postref &gt;}}index_files/header-attrs/header-attrs.js&#34;&gt;&lt;/script&gt;
+
+
+&lt;p&gt;Open Targets is a public-private partnership for systematic identification, prioritisation, and validation of drug targets. In this three-part blog post series, I will give an overview of Open Targets, the data available, and how to access it through the web interface, programmatically through the APIs, and using the data downloads.&lt;/p&gt;
+</description>
+    </item>
+    
     <item>
       <title>Claps and Comments in Blogdown</title>
       <link>https://clarewest.github.io/blog/post/claps-and-comments-in-blogdown/</link>
@@ -32,6 +46,7 @@
       
       <guid>https://clarewest.github.io/blog/post/making-tables-shiny/</guid>
       <description>
+&lt;script src=&#34;{{&lt; blogdown/postref &gt;}}index_files/header-attrs/header-attrs.js&#34;&gt;&lt;/script&gt;
 &lt;script src=&#34;{{&lt; blogdown/postref &gt;}}index_files/htmlwidgets/htmlwidgets.js&#34;&gt;&lt;/script&gt;
 &lt;script src=&#34;{{&lt; blogdown/postref &gt;}}index_files/jquery/jquery.min.js&#34;&gt;&lt;/script&gt;
 &lt;link href=&#34;{{&lt; blogdown/postref &gt;}}index_files/datatables-css/datatables-crosstalk.css&#34; rel=&#34;stylesheet&#34; /&gt;
