@@ -1,0 +1,616 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title> Crash Course in Open Targets Part 2: Genetics Deep Dive - Clare&#39;s Blog </title>
+    <meta name="HandheldFriendly" content="True">
+    <meta name="MobileOptimized" content="320">
+    <meta name="referrer" content="strict-origin">
+    <meta name="description" content="A deeper look at exploring genetic evidence in Open Targets Genetics Portal" />
+    <meta property="og:site_name" content="Clare&#39;s Blog" />
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:type" content="article" />
+    <meta property="og:url" content="https://clarewest.github.io/blog/post/crash-course-in-open-targets-part-two/" />
+    <meta property="og:title" content="Crash Course in Open Targets Part 2: Genetics Deep Dive" />
+    <meta property="og:image" content="https://clarewest.github.io/blog/post/crash-course-in-open-targets-part-two/images/Summer-School-in-Open-Targets-Part-1-Blog-Header-Image.jpeg"/>
+    <meta property="og:description" content="A deeper look at exploring genetic evidence in Open Targets Genetics Portal" />
+
+    <meta name="twitter:card" content="summary_large_image" />
+    
+    <meta name="twitter:site" content="@claree_west">
+    <meta name="twitter:creator" content="@claree_west">
+    
+    <meta name="twitter:title" content="Crash Course in Open Targets Part 2: Genetics Deep Dive" />
+    <meta name="twitter:description" content="A deeper look at exploring genetic evidence in Open Targets Genetics Portal" />
+    <meta name="twitter:image" content="https://clarewest.github.io/blog/post/crash-course-in-open-targets-part-two/images/Summer-School-in-Open-Targets-Part-1-Blog-Header-Image.jpeg " />
+
+    <link rel="canonical" href="https://clarewest.github.io/blog/post/crash-course-in-open-targets-part-two/">
+    <link rel="stylesheet" href="https://clarewest.github.io/blog//font-awesome-4.7.0/css/font-awesome.min.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha512-MoRNloxbStBcD8z3M/2BmnT+rg4IsMxPkXaGh2zD6LGNNFE80W3onsAhRcMAMrSoyWL9xD7Ert0men7vR8LUZg==" crossorigin="anonymous" />
+
+    <link rel="stylesheet" href="https://clarewest.github.io/blog//css/custom.css" />
+    
+    
+    <script id="twitter-wjs" type="text/javascript" async defer src="//platform.twitter.com/widgets.js"></script>
+    
+    <link href="https://clarewest.github.io/blog//lib/datatables-css-0.0.0/datatables-crosstalk.css" rel="stylesheet" />
+    <link href="https://clarewest.github.io/blog//lib/dt-core-1.10.20/css/jquery.dataTables.min.css" rel="stylesheet" />
+    <link href="https://clarewest.github.io/blog//lib/dt-core-1.10.20/css/jquery.dataTables.extra.css" rel="stylesheet" />
+    <link href="https://clarewest.github.io/blog//lib/crosstalk-1.1.0.1/css/crosstalk.css" rel="stylesheet" />
+    <script src="https://clarewest.github.io/blog//lib/htmlwidgets-1.5.1/htmlwidgets.js"></script>
+    <script src="https://clarewest.github.io/blog//lib/jquery-1.12.4/jquery.min.js"></script>
+    <script src="https://clarewest.github.io/blog//lib/datatables-binding-0.14/datatables.js"></script>
+    <script src="https://clarewest.github.io/blog//lib/dt-core-1.10.20/js/jquery.dataTables.min.js"></script>
+    <script src="https://clarewest.github.io/blog//lib/crosstalk-1.1.0.1/js/crosstalk.min.js"></script>
+    
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.2.0/styles/github-gist.min.css" integrity="sha512-od7JLoOTxM8w/HSKGzP9Kexc20K9p/M2zxSWsd7H1e4Ctf+8SQFtCWEZnW5u6ul5ehSECa5QmOk9ju2nQMmlVA==" crossorigin="anonymous" />
+    
+
+    
+
+    <link rel="shortcut icon"
+        href="https://clarewest.github.io/blog/images/favicon.png">
+
+    
+    <link href="https://clarewest.github.io/blog/index.xml" rel="alternate" type="application/rss+xml" title="Clare&#39;s Blog" />
+    
+    
+      
+  <link rel="stylesheet" href="https://unpkg.com/applause-button@3.4.0/dist/applause-button.css">
+  <script src="https://unpkg.com/applause-button@3.4.0/dist/applause-button.js"></script>
+  
+</head>
+
+<body>
+  
+    
+<div class="mt-xl header">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-auto">
+                <a href="https://clarewest.github.io/blog/">
+                    <h1 class="name">Clare&#39;s Blog</h1>
+                </a>
+            </div>
+        </div>
+
+        <div class="row justify-content-center">
+            <ul class="nav nav-primary">
+                
+                <li class="nav-item">
+                    <a class="nav-link" href="https://clarewest.github.io/blog/">
+                        
+                        Home
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link" href="https://github.com/clarewest">
+                        
+                        GitHub
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link" href="https://twitter.com/claree_west">
+                        
+                        Twitter
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link" href="https://clarewest.github.io">
+                        
+                        Website
+                    </a>
+                </li>
+                
+            </ul>
+        </div>
+    </div>
+</div>
+
+<div class="content">
+    <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-lg-1 justify-content-right">
+              <applause-button style="width: 50px; height: 50px;" multiclap="true" url="https://clarewest.github.io/blog/post/crash-course-in-open-targets-part-two/"/>
+          </div>
+            <div class="col-sm-12 col-lg-8">
+                <h1 class="mx-0 mx-md-4 blog-post-title">Crash Course in Open Targets Part 2: Genetics Deep Dive</h1>
+
+                <div class="mb-md-4 meta">
+                    
+                    
+                    <span class="author" title="CE West">
+                        CE West
+                    </span>
+                    
+                    
+
+                    <span class="date middot" title='Thu Jul 22 2021 00:00:00 UTC'>
+                        2021-07-22
+                    </span>
+
+                    <span class="reading-time middot">
+                        9 min read
+                    </span>
+
+                    <div class="d-none d-md-inline tags">
+                        <ul class="list-unstyled d-inline">
+                            
+                            <li class="d-inline middot">
+                                <a href="https://clarewest.github.io/blog/tags/bioinformatics">bioinformatics</a>
+                            </li>
+                            
+                            <li class="d-inline middot">
+                                <a href="https://clarewest.github.io/blog/tags/genetics">genetics</a>
+                            </li>
+                            
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="markdown blog-post-content">
+                    
+    <p>In <a href="https://clarewest.github.io/blog/post/crash-course-in-open-targets-part-1/">Part 1</a> of this crash course, we learnt how to browse and access data in Open Targets through the web interface and the GraphQL APIs. In Part 2, I’ll go into more detail about the kind of data that’s available, and demonstrate how you might explore the genetic evidence linking targets and diseases.</p>
+<div id="querying-evidence-for-target-disease-associations" class="section level4">
+<h4>Querying evidence for target-disease associations</h4>
+<p>In one of the Part 1 examples, I demonstrated how to retrieve the top 5 targets associated with Coronary Artery Disease using R:</p>
+<pre class="r"><code>library(dplyr)
+library(ghql)
+library(jsonlite)
+
+## Set up to query Open Targets Platform API
+otp_cli &lt;- GraphqlClient$new(url = &#39;https://api.platform.opentargets.org/api/v4/graphql&#39;)
+otp_qry &lt;- Query$new()
+
+## Query for targets associated with a disease
+otp_qry$query(&#39;simple_query&#39;, &#39;query simpleQuery($efoId: String!){
+  disease(efoId: $efoId){
+    name
+    associatedTargets{
+      rows{
+        target{
+          id
+          approvedName
+        }
+        datatypeScores{
+          id
+          score
+        }
+      }
+    }
+  }
+}&#39;
+)
+
+## Execute the query
+variables &lt;- list(efoId = &#39;EFO_0001645&#39;)
+result &lt;- fromJSON(otp_cli$exec(otp_qry$queries$simple_query, variables, flatten = TRUE))$data$disease
+
+top_targets &lt;- 
+  as.data.frame(result$associatedTargets$rows) %&gt;% 
+  flatten() %&gt;% 
+  tidyr::unnest(datatypeScores) %&gt;% 
+  tidyr::pivot_wider(names_from = &quot;id&quot;, values_from = &quot;score&quot;)
+
+head(top_targets, 5)</code></pre>
+<pre><code>## # A tibble: 5 x 6
+##   target.id target.approved… known_drug literature genetic_associa… animal_model
+##   &lt;chr&gt;     &lt;chr&gt;                 &lt;dbl&gt;      &lt;dbl&gt;            &lt;dbl&gt;        &lt;dbl&gt;
+## 1 ENSG0000… guanylate cycla…      0.995     0.0304            0.778       NA    
+## 2 ENSG0000… apolipoprotein E     NA         0.948             0.855        0.511
+## 3 ENSG0000… proprotein conv…      0.937     0.937             0.755        0.262
+## 4 ENSG0000… LDL receptor re…     NA         0.518             0.830        0.423
+## 5 ENSG0000… phosphodiestera…      0.970     0.0469            0.407       NA</code></pre>
+<p>Let’s take a deeper look at the evidence supporting these associations. There are many fields available in the evidence entity, representing the many different sources of evidence that can contribute to an association in Open Targets.</p>
+<p>In this example, let’s look at the GWAS evidence linking these top 5 targets to Coronary Artery Disease.</p>
+<ul>
+<li><p><code>datasourceIds: ["ot_genetics_portal"]</code> restricts the query to evidence from Open Targets Genetics Portal.</p></li>
+<li><p>The field <code>diseaseFromSource</code> will tell me the actual trait of the GWAS study, while <code>disease.id</code> and <code>disease.name</code> represent the EFO term to which this has been mapped. By default, evidence linked to descendant terms of my EFO query term is included in associations - this is known as ‘indirect evidence’, and you can <a href="http://blog.opentargets.org/2017/04/25/direct-versus-indirect-evidence-should-you-care/">read more about whether you should care about this here</a>. In this example, GWAS evidence for descendant terms such as “Coronary atherosclerosis” have been included in the output of my search for “Coronary artery disease”.</p></li>
+<li><p><code>score</code> is the resource score - in this case, it’s the <a href="https://genetics-docs.opentargets.org/our-approach/prioritising-causal-genes-at-gwas-loci-l2g">locus-to-gene score</a> from the genetics portal, which represents the confidence that this trait-associated locus is linked to this target/gene.</p></li>
+<li><p>The other fields I’ve included here are the GWAS study ID and the year it was published, the effect size (beta or odds ratio), the lead variant IDs, and the <a href="https://www.ensembl.org/info/docs/tools/vep/index.html">predicted functional consequence</a> of the variant.</p></li>
+</ul>
+<pre class="r"><code>## Query for genetic evidence
+otp_qry$query(
+    &#39;genetic_evidence_query&#39;,
+    &#39;query geneticEvidenceQuery($efoId: String!, $ensemblIds: [String!]!){
+  disease(efoId: $efoId){
+    evidences(ensemblIds: $ensemblIds,
+    datasourceIds: [&quot;ot_genetics_portal&quot;])
+    {
+      rows{
+        target{
+          id
+          approvedSymbol
+        }
+        disease{
+          id
+          name
+        }
+        score
+        diseaseFromSource
+        studyId
+        publicationYear
+        oddsRatio
+        beta
+        variantId
+        variantRsId
+        variantFunctionalConsequence{
+          label
+        }
+      }
+    }
+  }
+}
+&#39;)
+
+## Execute the query
+variables &lt;-
+    list(efoId = &#39;EFO_0001645&#39;,
+         ensemblIds = head(top_targets, 5)$target.id)
+result &lt;-
+    fromJSON(otp_cli$exec(otp_qry$queries$genetic_evidence_query, variables, flatten = TRUE))$data
+
+top5_evidence &lt;-
+    as.data.frame(result$disease$evidences$rows) %&gt;% flatten() %&gt;% head(10)</code></pre>
+<p>As an example, let’s look at the sixth piece of evidence, which shows that a 2021 GWAS study found a G to T missense variant in the gene for PCSK9 on chromosome 1 to be associated with an increased risk of a major coronary heart disease event (OR 0.79).</p>
+<pre class="r"><code>interesting_evidence &lt;- top5_evidence[6,] 
+as.list(interesting_evidence) </code></pre>
+<pre><code>## $score
+## [1] 0.806007
+## 
+## $diseaseFromSource
+## [1] &quot;Major coronary heart disease event&quot;
+## 
+## $studyId
+## [1] &quot;FINNGEN_R5_I9_CHD&quot;
+## 
+## $publicationYear
+## [1] 2021
+## 
+## $oddsRatio
+## [1] 0.7875724
+## 
+## $beta
+## [1] NA
+## 
+## $variantId
+## [1] &quot;1_55039974_G_T&quot;
+## 
+## $variantRsId
+## [1] &quot;rs11591147&quot;
+## 
+## $target.id
+## [1] &quot;ENSG00000169174&quot;
+## 
+## $target.approvedSymbol
+## [1] &quot;PCSK9&quot;
+## 
+## $disease.id
+## [1] &quot;EFO_0001645&quot;
+## 
+## $disease.name
+## [1] &quot;coronary artery disease&quot;
+## 
+## $variantFunctionalConsequence.label
+## [1] &quot;missense_variant&quot;</code></pre>
+</div>
+<div id="open-targets-genetics-portal" class="section level3">
+<h3>Open Targets Genetics Portal</h3>
+<p>Once you’re delving deep enough into GWAS evidence, you might want to make the jump to the Genetics Portal. The Portal also has a GraphQL API, but the data is structured around variant, study, and gene entities. Unlike the Platform, where evidence for the same disease is grouped together, GWAS studies are kept separate.</p>
+<p>The following query will get more information about the GWAS evidence above linking PCSK9 to coronary artery disease. Firstly, it retrieves details about the sample size, ancestry, and total number of associated loci from the GWAS study. It also retrieves all other possible gene mappings for the locus, including the locus-to-gene score, the distance to the gene, and whether there is molecular trait colocalisation linking this locus to the gene. In this case, the locus-to-gene scores are very low for genes other than PCSK9 (only locus-to-gene scores greater than 0.05 will be used as evidence in the Platform):</p>
+<pre class="r"><code>## Set up to query Open Targets Genetics API
+otg_cli &lt;- GraphqlClient$new(url = &quot;https://api.genetics.opentargets.org/graphql&quot;)
+otg_qry &lt;- Query$new()
+
+## Query for GWAS study locus details
+otg_qry$query(&#39;l2g_query&#39;, &#39;query l2gQuery($studyId: String!, $variantId: String!){
+    studyInfo(studyId: $studyId){
+    numAssocLoci
+    ancestryInitial
+    nTotal
+    nCases
+    pubAuthor
+  }
+  studyLocus2GeneTable(studyId: $studyId, variantId: $variantId){
+    rows {
+      gene {
+        id
+        symbol
+      }
+      hasColoc
+      yProbaModel
+      distanceToLocus
+    }
+  }
+}&#39;)
+
+## Execute the query 
+variables &lt;- list(studyId = interesting_evidence$studyId, variantId = interesting_evidence$variantId)
+result &lt;- fromJSON(otg_cli$exec(otg_qry$queries$l2g_query, variables, flatten = TRUE))$data</code></pre>
+<pre class="r"><code>result$studyInfo</code></pre>
+<pre><code>## $numAssocLoci
+## [1] 23
+## 
+## $ancestryInitial
+## [1] &quot;European=218792&quot;
+## 
+## $nTotal
+## [1] 218792
+## 
+## $nCases
+## [1] 21012
+## 
+## $pubAuthor
+## [1] &quot;FINNGEN_R5&quot;</code></pre>
+<pre class="r"><code>result$studyLocus2GeneTable </code></pre>
+<pre><code>## $rows
+##            gene.id gene.symbol hasColoc yProbaModel distanceToLocus
+## 1  ENSG00000006555       TTC22    FALSE 0.012453916          238651
+## 2  ENSG00000116133      DHCR24    FALSE 0.028346576          152779
+## 3  ENSG00000143001      TMEM61    FALSE 0.071031295           59346
+## 4  ENSG00000162390      ACOT11    FALSE 0.008267773          497717
+## 5  ENSG00000162391     FAM151A    FALSE 0.007535086          416418
+## 6  ENSG00000162396       PARS2    FALSE 0.009444200          275451
+## 7  ENSG00000162398        LEXM    FALSE 0.014227788          233911
+## 8  ENSG00000162399        BSND    FALSE 0.057393700           41781
+## 9  ENSG00000162402       USP24    FALSE 0.074823588          175390
+## 10 ENSG00000169174       PCSK9    FALSE 0.806006968             426
+## 11 ENSG00000184313       MROH7    FALSE 0.007656511          398220
+## 12 ENSG00000243725        TTC4    FALSE 0.009801239          324113
+## 13 ENSG00000271723  MROH7-TTC4    FALSE 0.008091008          398188</code></pre>
+<div id="lead-and-tag-variants" class="section level4">
+<h4>Lead and tag variants</h4>
+<p>Time for a quick genetics refresher…</p>
+<p>The lead variant reported for a GWAS association is usually the SNP with the smallest p-value at the locus (i.e the most significant SNP), <strong>but this is not necessarily the causal variant</strong>. This is important when investigating individual genetic associations and making comparisons across studies. The causal variant may be a nearby less-significant SNP, or may be an unmeasured SNP that correlates with the lead SNP but was not included in the GWAS microarray.</p>
+<p>SNPs are correlated if they are inherited together more frequently than would be expected by chance, known as Linkage Disequilibrium (LD). The extent of LD between SNPs depends on the distance between them, how often recombination occurs in the genomic region, as well as population structure. In regions where large genomic units are frequently inherited together in the study population, there can be a large number of possible causal variants that are difficult to disentangle. Authors are increasingly encouraged to deposit full summary statistics - which include p-values and effect sizes for all SNPs measured in the GWAS study - but for many older studies only the lead variant information is available.</p>
+<p>In Open Targets Genetics, the <a href="https://genetics-docs.opentargets.org/our-approach/assigning-traits-to-loci">lead variants are expanded into a more comprehensive set of candidate causal variants referred to as the <em>tag variants</em></a>. For studies where summary statistics are available, fine-mapping is used to identify a credible set of possible causal variants based on the GWAS results. Where summary statistics are not available, tag variants include those that are highly correlated (r<sup>2</sup>&gt;0.7) with the lead variants; LD information is calculated from a reference population that most closely matches the study population’s ancestry.</p>
+<div id="so-what" class="section level5">
+<h5>So what?</h5>
+<p>So, there’s more to GWAS than lead variants!</p>
+<p>The following query retrieves the credible set of variants for one of the GWAS associations linking APOE to Coronary Artery Disease (in this case, there are three variants):</p>
+<pre class="r"><code>## Query for GWAS study locus details
+otg_qry$query(&#39;credset_query&#39;, &#39;query credsetQuery($studyId: String!, $variantId: String!){
+  gwasCredibleSet(studyId: $studyId, variantId: $variantId) {
+    tagVariant {
+      id
+    }
+    beta
+    postProb
+    pval
+  }
+}&#39;)
+
+## Execute the query 
+variables &lt;- list(studyId = interesting_evidence$studyId, variantId = interesting_evidence$variantId)
+result &lt;- fromJSON(otg_cli$exec(otg_qry$queries$credset_query, variables, flatten = TRUE))$data
+
+result$gwasCredibleSet %&gt;% flatten()</code></pre>
+<pre><code>##                   id    beta   postProb      pval
+## 1     1_54982575_G_A -0.2309 0.16240063 5.138e-11
+## 2     1_55039974_G_T -0.2388 0.76268851 1.247e-11
+## 3 1_55101964_CTTGA_C -0.2348 0.03686097 2.472e-10</code></pre>
+</div>
+</div>
+<div id="querying-colocalisation-information" class="section level4">
+<h4>Querying colocalisation information</h4>
+<p><a href="https://genetics-docs.opentargets.org/our-approach/colocalisation-analysis">Colocalisation analysis</a> is performed between all studies in the Portal with at least one overlapping associated locus. This analysis tests whether two independent associations at the same locus are consistent with having a shared causal variant. Colocalisation of two independent associations from two GWAS studies may suggest a shared causal mechanism. Colocalisation of a locus associated with a trait (through a GWAS) and with protein levels (through a pQTL study) may suggest a link between the protein and the trait.</p>
+<p>For example, for the top 5 targets linked to Coronary Artery Disease that I retrieved earlier from the Platform, I can see whether there is evidence of colocalisation with loci associated with a change in protein or expression levels. This query will retrieve the lead variant, effect size, tissue, and study ID for QTL studies for which there is evidence of colocalisation:</p>
+<pre class="r"><code>## Query for QTL colocalisation
+otg_qry$query(
+  &#39;qtl_query&#39;,
+  &#39;query qtlColocalisationVariantQuery($studyId: String!, $variantId: String!) {
+  qtlColocalisation(studyId: $studyId, variantId: $variantId){
+    qtlStudyName
+    phenotypeId
+    gene {
+      id
+      symbol
+    }
+    tissue {
+      name
+    }
+    indexVariant {
+      id
+    }
+    beta
+    h4
+  }
+}&#39;
+)
+
+fetch_qtl &lt;- function(current_studyId, current_variantId) {
+  variables = list(studyId = current_studyId, variantId = current_variantId)
+  result &lt;-
+    fromJSON(otg_cli$exec(otg_qry$queries$qtl_query, variables, flatten = TRUE))$data
+  l2g_result &lt;- result$qtlColocalisation
+  return(l2g_result)
+}
+
+variants &lt;- top5_evidence %&gt;%
+  select(studyId, variantId) %&gt;%
+  unique()
+
+variants_qtl &lt;-
+  variants %&gt;%
+  rowwise() %&gt;%
+  mutate(qtl = list(fetch_qtl(studyId, variantId))) %&gt;%
+  tidyr::unnest(qtl) %&gt;%
+  select(-qtl) %&gt;%
+  flatten()</code></pre>
+<pre><code>##                         studyId        variantId qtlStudyName     phenotypeId
+## 1 FINNGEN_R5_I9_CORATHER_EXNONE 4_155762333_AT_A      GTEX_v7 ENSG00000164116
+## 2 FINNGEN_R5_I9_CORATHER_EXNONE 4_155762333_AT_A      GTEX_v7 ENSG00000260244
+## 3 FINNGEN_R5_I9_CORATHER_EXNONE 4_155762333_AT_A      GTEX_v7 ENSG00000260244
+## 4        FINNGEN_R5_I9_CORATHER 4_155762333_AT_A      GTEX_v7 ENSG00000164116
+## 5        FINNGEN_R5_I9_CORATHER 4_155762333_AT_A      GTEX_v7 ENSG00000260244
+##       beta        h4         gene.id gene.symbol   tissue.name indexVariant.id
+## 1 0.154862 0.7625397 ENSG00000164116     GUCY1A1 Artery tibial 4_155694252_C_T
+## 2 0.116993 0.4844574 ENSG00000260244  AC104083.1 Artery tibial 4_155694252_C_T
+## 3 0.181015 0.9095855 ENSG00000260244  AC104083.1          Lung 4_155724361_C_A
+## 4 0.154862 0.7935801 ENSG00000164116     GUCY1A1 Artery tibial 4_155694252_C_T
+## 5 0.116993 0.4565324 ENSG00000260244  AC104083.1 Artery tibial 4_155694252_C_T</code></pre>
+</div>
+<div id="wow-what-else-is-there" class="section level4">
+<h4>Wow, what else is there?</h4>
+<p>The Genetics Portal not only aggregates GWAS study data in one place, but performs a number of analyses that can help make sense of the vast genetic data available. In this blog post I’ve demonstrated a few ways this information can be used alongside the Genetics Platform to find and explore genetic links between targets and diseases, but this really just scratches the surface. Find out more about the Genetics Portal in the <a href="https://genetics-docs.opentargets.org/">documentation</a> and the <a href="https://community.opentargets.org/">Open Targets Community</a>.</p>
+<p>In the next and final part of this blog series, we’ll delve into how you can bypass the APIs completely and get straight to the good stuff with the data downloads.</p>
+</div>
+</div>
+
+
+
+                     <div class="row justify-content-center">
+   
+                <div class="blog-post-footer">
+                    <applause-button style="width: 58px; height: 58px;" multiclap="true" url="https://clarewest.github.io/blog/post/crash-course-in-open-targets-part-two/"/>
+                </div>
+        <div class="blog-post-footer">
+  
+
+<style>
+#share-buttons {display: inline-block; vertical-align: middle; }
+#share-buttons:after {content: ""; display: block; clear: both;}
+#share-buttons > div {
+position: relative;
+text-align: left; 
+height: 36px; 
+width: 32px; 
+float: left; 
+text-align: center;
+}
+#share-buttons > div > svg {height: 16px; fill: #d5d5d5; margin-top: 10px;}
+#share-buttons > div:hover {cursor: pointer;}
+#share-buttons > div.facebook:hover > svg {fill: #3B5998;}
+#share-buttons > div.twitter:hover > svg {fill: #55ACEE;}
+#share-buttons > div.linkedin:hover > svg {fill: #0077b5;}
+#share-buttons > div.pinterest:hover > svg {fill: #CB2027;}
+#share-buttons > div.gplus:hover > svg {fill: #dd4b39;}
+#share-buttons > div.mail:hover > svg {fill: #7D7D7D;}
+#share-buttons > div.instagram:hover > svg {fill: #C73B92;}
+#share-buttons > div.facebook > svg {height: 18px; margin-top: 9px;}
+#share-buttons > div.twitter > svg {height: 20px; margin-top: 8px;}
+#share-buttons > div.linkedin > svg {height: 19px; margin-top: 7px;}
+#share-buttons > div.pinterest > svg {height: 20px; margin-top: 9px;}
+#share-buttons > div.mail > svg {height: 14px; margin-top: 11px;}
+</style>
+
+<span style="color: silver;">Share this post on: <br></span><div id="share-buttons">
+<div class="twitter" title="Share this on Twitter" onclick="window.open('http://twitter.com/intent/tweet?url=https:\/\/clarewest.github.io\/blog\/post\/crash-course-in-open-targets-part-two\/');"><svg viewBox="0 0 1792 1792" xmlns="http://www.w3.org/2000/svg"><path d="M1684 408q-67 98-162 167 1 14 1 42 0 130-38 259.5t-115.5 248.5-184.5 210.5-258 146-323 54.5q-271 0-496-145 35 4 78 4 225 0 401-138-105-2-188-64.5t-114-159.5q33 5 61 5 43 0 85-11-112-23-185.5-111.5t-73.5-205.5v-4q68 38 146 41-66-44-105-115t-39-154q0-88 44-163 121 149 294.5 238.5t371.5 99.5q-8-38-8-74 0-134 94.5-228.5t228.5-94.5q140 0 236 102 109-21 205-78-37 115-142 178 93-10 186-50z"/></svg></div>
+<div class="linkedin" title="Share this on Linkedin" onclick="window.open('https://www.linkedin.com/shareArticle?mini=true&url=https:\/\/clarewest.github.io\/blog\/post\/crash-course-in-open-targets-part-two\/&title=&summary=&source=');"><svg viewBox="0 0 1792 1792" xmlns="http://www.w3.org/2000/svg"><path d="M477 625v991h-330v-991h330zm21-306q1 73-50.5 122t-135.5 49h-2q-82 0-132-49t-50-122q0-74 51.5-122.5t134.5-48.5 133 48.5 51 122.5zm1166 729v568h-329v-530q0-105-40.5-164.5t-126.5-59.5q-63 0-105.5 34.5t-63.5 85.5q-11 30-11 81v553h-329q2-399 2-647t-1-296l-1-48h329v144h-2q20-32 41-56t56.5-52 87-43.5 114.5-15.5q171 0 275 113.5t104 332.5z"/></svg></div>
+<div class="mail" title="Share this through Email" onclick="window.open('mailto:?&body=https:\/\/clarewest.github.io\/blog\/post\/crash-course-in-open-targets-part-two\/');"><svg viewBox="0 0 1792 1792" xmlns="http://www.w3.org/2000/svg"><path d="M1792 710v794q0 66-47 113t-113 47h-1472q-66 0-113-47t-47-113v-794q44 49 101 87 362 246 497 345 57 42 92.5 65.5t94.5 48 110 24.5h2q51 0 110-24.5t94.5-48 92.5-65.5q170-123 498-345 57-39 100-87zm0-294q0 79-49 151t-122 123q-376 261-468 325-10 7-42.5 30.5t-54 38-52 32.5-57.5 27-50 9h-2q-23 0-50-9t-57.5-27-52-32.5-54-38-42.5-30.5q-91-64-262-182.5t-205-142.5q-62-42-117-115.5t-55-136.5q0-78 41.5-130t118.5-52h1472q65 0 112.5 47t47.5 113z"/></svg></div>
+</div>
+
+  </div>
+</div>
+
+
+                </div>
+              
+
+                
+            </div>
+          <div class="col-lg-1 justify-content-right">
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<section id="comments">
+    <div class="py-3 content">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-sm-12 col-lg-8">
+                    <div class="comments">
+                        <script src="https://utteranc.es/client.js" repo="clarewest/blog-comments"
+                            issue-term="pathname" label="comment" theme="github-light" crossorigin="anonymous" async>
+                            </script>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<footer class="site-footer">
+<div class="content">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-sm-12 col-lg-8">
+
+                      <div class="footer-col-wrapper">
+      <div class="footer-col footer-col-1">
+        <ul class="contact-list">
+          <li class="p-name">Clare E. West</li></ul>
+      </div>
+      <div class="footer-col footer-col-2">
+        <ul class="social-media-list">
+          <li>
+            <a href="https://github.com/clarewest">
+                                  <i class="fa fa-github social-icon"></i>
+
+                <span class="username">clarewest</span>
+                </a>
+                </li>
+                <li>
+                  <a href="http://twitter.com/claree_west">
+                    <i class="fa fa-twitter social-icon"></i>
+                    <span class="username">claree_west</span></a>
+                    </li>
+                    </ul>
+      
+</div>
+
+      <div class="footer-col footer-col-3">
+        <p>Data adventures of a former biochemist.</p>
+      </div>
+      </div>
+                       
+                        
+                  </div>
+        </div>
+    </div>
+</div>
+</footer>
+
+    
+
+    
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.2.0/highlight.min.js" integrity="sha512-TDKKr+IvoqZnPzc3l35hdjpHD0m+b2EC2SrLEgKDRWpxf2rFCxemkgvJ5kfU48ip+Y+m2XVKyOCD85ybtlZDmw==" crossorigin="anonymous"></script>
+        
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.2.0/languages/r.min.js" defer></script>
+        
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.2.0/languages/python.min.js" defer></script>
+        
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.2.0/languages/stan.min.js" defer></script>
+        
+        <script>
+            window.addEventListener('load', function() {
+                hljs.initHighlighting();
+            }, true);
+        </script>
+    
+
+    
+
+    
+    
+        
+<script src="https://clarewest.github.io/blog/js/math-code.js"></script>
+<script async src="//cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+
+
+    
+
+    
+</body>
+
+
+
+</html>
