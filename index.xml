@@ -182,6 +182,24 @@ else wants to achieve a similar thing.&lt;/p&gt;</description>
     </item>
     
     <item>
+      <title>Introduction to R Markdown</title>
+      <link>https://clarewest.github.io/blog/post/introduction-to-r-markdown/</link>
+      <pubDate>Thu, 12 Jul 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://clarewest.github.io/blog/post/introduction-to-r-markdown/</guid>
+      <description>&lt;p&gt;Two of our esteemed OPIGlets presented a workshop on collaborative research using Jupyter Notebook this week at &lt;a href=&#34;https://www.iscb.org/ismb2018&#34;&gt;ISMB in Chicago&lt;/a&gt;. Their workshop highlights the importance of finding ways to share your work conveniently and reproducibly. So on a related note, I thought I would share a brief introduction to another useful tool, &lt;a href=&#34;http://rmarkdown.rstudio.com/&#34;&gt;R Markdown&lt;/a&gt; with RStudio, which I use to present updates to various supervisors and to remember what I did three months (or three days) ago. This method of sharing work is highly readable, reproducible, and narrative-driven.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Latexing with gvim</title>
+      <link>https://clarewest.github.io/blog/post/latexing-with-gvim/</link>
+      <pubDate>Sun, 29 Oct 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://clarewest.github.io/blog/post/latexing-with-gvim/</guid>
+      <description>&lt;p&gt;Here I’ll share my set-up for writing Latex with gvim instead of a separate Latex editor. If you are text-editor averse, this blog post is not for you. But if, like me, you love vim and hate useless GUIs, this might be helpful.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
       <title>Protein Structure Classification: Order in the Chaos</title>
       <link>https://clarewest.github.io/blog/post/protein-structure-classification/</link>
       <pubDate>Tue, 28 Feb 2017 00:00:00 +0000</pubDate>

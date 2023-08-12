@@ -1,0 +1,342 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title> Latexing with gvim - Clare&#39;s Blog </title>
+    <meta name="HandheldFriendly" content="True">
+    <meta name="MobileOptimized" content="320">
+    <meta name="referrer" content="strict-origin">
+    <meta name="description" content="How to use latex without a GUI" />
+    <meta property="og:site_name" content="Clare&#39;s Blog" />
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:type" content="article" />
+    <meta property="og:url" content="https://clarewest.github.io/blog/post/latexing-with-gvim/" />
+    <meta property="og:title" content="Latexing with gvim" />
+    <meta property="og:image" content="https://clarewest.github.io/blog/post/latexing-with-gvim/images/image.png"/>
+    <meta property="og:description" content="How to use latex without a GUI" />
+
+    <meta name="twitter:card" content="summary" />
+    
+    <meta name="twitter:site" content="@claree_west">
+    <meta name="twitter:creator" content="@claree_west">
+    
+    <meta name="twitter:title" content="Latexing with gvim" />
+    <meta name="twitter:description" content="How to use latex without a GUI" />
+    <meta name="twitter:image" content="https://clarewest.github.io/blog/post/latexing-with-gvim/images/image.png " />
+
+    <link rel="canonical" href="https://clarewest.github.io/blog/post/latexing-with-gvim/">
+    <link rel="stylesheet" href="https://clarewest.github.io/blog//font-awesome-4.7.0/css/font-awesome.min.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha512-MoRNloxbStBcD8z3M/2BmnT+rg4IsMxPkXaGh2zD6LGNNFE80W3onsAhRcMAMrSoyWL9xD7Ert0men7vR8LUZg==" crossorigin="anonymous" />
+
+    <link rel="stylesheet" href="https://clarewest.github.io/blog//css/custom.css" />
+    
+    
+    <script id="twitter-wjs" type="text/javascript" async defer src="//platform.twitter.com/widgets.js"></script>
+    
+    <link href="https://clarewest.github.io/blog//lib/datatables-css-0.0.0/datatables-crosstalk.css" rel="stylesheet" />
+    <link href="https://clarewest.github.io/blog//lib/dt-core-1.10.20/css/jquery.dataTables.min.css" rel="stylesheet" />
+    <link href="https://clarewest.github.io/blog//lib/dt-core-1.10.20/css/jquery.dataTables.extra.css" rel="stylesheet" />
+    <link href="https://clarewest.github.io/blog//lib/crosstalk-1.1.0.1/css/crosstalk.css" rel="stylesheet" />
+    <script src="https://clarewest.github.io/blog//lib/htmlwidgets-1.5.1/htmlwidgets.js"></script>
+    <script src="https://clarewest.github.io/blog//lib/jquery-1.12.4/jquery.min.js"></script>
+    <script src="https://clarewest.github.io/blog//lib/datatables-binding-0.14/datatables.js"></script>
+    <script src="https://clarewest.github.io/blog//lib/dt-core-1.10.20/js/jquery.dataTables.min.js"></script>
+    <script src="https://clarewest.github.io/blog//lib/crosstalk-1.1.0.1/js/crosstalk.min.js"></script>
+    
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.2.0/styles/github-gist.min.css" integrity="sha512-od7JLoOTxM8w/HSKGzP9Kexc20K9p/M2zxSWsd7H1e4Ctf+8SQFtCWEZnW5u6ul5ehSECa5QmOk9ju2nQMmlVA==" crossorigin="anonymous" />
+    
+
+    
+
+    <link rel="shortcut icon"
+        href="https://clarewest.github.io/blog/images/favicon.png">
+
+    
+    <link href="https://clarewest.github.io/blog/index.xml" rel="alternate" type="application/rss+xml" title="Clare&#39;s Blog" />
+    
+    
+      
+  <link rel="stylesheet" href="https://unpkg.com/applause-button@3.4.0/dist/applause-button.css">
+  <script src="https://unpkg.com/applause-button@3.4.0/dist/applause-button.js"></script>
+  
+</head>
+
+<body>
+  
+    
+<div class="mt-xl header">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-auto">
+                <a href="https://clarewest.github.io/blog/">
+                    <h1 class="name">Clare&#39;s Blog</h1>
+                </a>
+            </div>
+        </div>
+
+        <div class="row justify-content-center">
+            <ul class="nav nav-primary">
+                
+                <li class="nav-item">
+                    <a class="btn btn-outline" href="https://clarewest.github.io/blog/">
+                          
+                        Home 
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="btn btn-outline" href="https://github.com/clarewest">
+                          
+                        GitHub 
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="btn btn-outline" href="https://twitter.com/claree_west">
+                          
+                        Twitter 
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="btn btn-outline" href="https://clarewest.github.io">
+                          
+                        Website 
+                    </a>
+                </li>
+                
+            </ul>
+        </div>
+    </div>
+</div>
+
+<div class="content">
+    <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-lg-1 justify-content-right">
+              <applause-button style="width: 50px; height: 50px;" multiclap="true" url="https://clarewest.github.io/blog/post/latexing-with-gvim/"/>
+          </div>
+            <div class="col-sm-12 col-lg-8">
+                <h1 class="mx-0 mx-md-4 blog-post-title">Latexing with gvim</h1>
+
+                <div class="mb-md-4 meta">
+                    
+                    
+                    <span class="author" title="CE West">
+                        CE West
+                    </span>
+                    
+                    
+
+                    <span class="date middot" title='Sun Oct 29 2017 00:00:00 UTC'>
+                        2017-10-29
+                    </span>
+
+                    <span class="reading-time middot">
+                        3 min read
+                    </span>
+
+                    <div class="d-none d-md-inline tags">
+                        <ul class="list-unstyled d-inline">
+                            
+                            <li class="d-inline middot">
+                                <a href="https://clarewest.github.io/blog/tags/latex">latex</a>
+                            </li>
+                            
+                            <li class="d-inline middot">
+                                <a href="https://clarewest.github.io/blog/tags/coding">coding</a>
+                            </li>
+                            
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="markdown blog-post-content">
+                    
+    <p>Here I’ll share my set-up for writing Latex with gvim instead of a separate Latex editor. If you are text-editor averse, this blog post is not for you. But if, like me, you love vim and hate useless GUIs, this might be helpful.</p>
+<p>Until now, I’ve been happily using TexMaker for writing, but during a recent period of intense Latexing I started to find the useable screen space oppressively small. The unnecessary GUI had to go.</p>
+<div class="figure">
+<p><img src="https://www.blopig.com/blog/wp-content/uploads/2017/10/Screen-Shot-2017-10-29-at-20.53.42.png?w=1250&amp;ssl=1" alt="Number of structures in the PDB"></p>
+<p class="caption">No offence TexMaker but I don’t like you</p>
+</div>
+<p>One of our good friends in <a href="http://www.stats.ox.ac.uk/~myers/">Statistical Genetics</a> recommended some things to help me with the transition to just using good old (g)vim, which I will now recommend to you.</p>
+<p>The key thing is the <a href="https://github.com/LaTeX-Box-Team/LaTeX-Box">LaTex-Box plug-in</a> for vim, which gives you the compilation commands, as well as the essentials such as smart indentation, highlight matching, command completion, etc. I used pathogen to install it (see the GitHub for instructions).</p>
+<p>Of course, you can then customise your <code>.vimrc</code> file to add more helpful things. This can be the simple preferences, such as using a light background when using gvim:</p>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#00f">if</span> has(“gui_running”)
+        set background=light
+endif
+</code></pre></div><p>You can also do more complicated magic like tabbing through available commands, and the ability to minimise sections, etc. Sidenote: to make working with paragraphs easier, I recommend setting the up/down arrows to move the cursor to the next line in the GUI rather than the next actual line. I prefer overriding this behaviour only in gvim, while leaving the normal behaviour in vim (for actual coding). But each to their own.</p>
+<p>To get started, open a <code>.tex</code> file, then compile and view the document with the command <code>Latexmk</code>.</p>
+<div class="figure">
+<p><img src="https://www.blopig.com/blog/wp-content/uploads/2017/10/Screen-Shot-2017-10-29-at-20.51.47.png?w=524&amp;ssl=1" alt="Basic forms diagram"></p>
+<p class="caption">Command suggestions are an example of a magical feature added in .vimrc</p>
+</div>
+<p>The configurations for this command are set in the file <code>.latexmkrc</code>. Mine looks like this:</p>
+<div class="highlight"><pre style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">$recorder = 1;
+$pdf_mode = 1;
+$bibtex_use = 2;
+$pdflatex = <span style="color:#a31515">&#34;pdflatex --shell-escape %O %S&#34;</span>;
+$pdf_previewer = <span style="color:#a31515">&#34;start open -a skim %O %S&#34;</span>;
+</code></pre></div><p>My pdf viewer of choice on Mac is Skim, which autoupdates. I view the source and preview at the same time using split view. Please admire the beauty below:</p>
+<div class="figure">
+<p><img src="https://i0.wp.com/www.blopig.com/blog/wp-content/uploads/2017/10/Screen-Shot-2017-10-21-at-18.53.34.png?w=1250&amp;ssl=1" alt="Basic forms diagram"></p>
+<p class="caption">Wow what a beautiful screen
+</p>
+</div>
+<p>My favourite part is that whenever you save (w), it recompiles and updates the preview. As someone who accidentally types :w everywhere that isn’t vim, it’s nice that this is now productive. It also recompiles automatically if the .bib file is updated. Note that if you have errors at compilation (I’m sure you don’t), you can view them with the command LatexErrors.</p>
+<p>Now you too can be a (nearly) GUI-free lightweight Latexer. Enjoy!</p>
+<p><em>This blog post was originally posted on the <a href="https://www.blopig.com/blog/author/clare/">OPIG blog</a>.</em></p>
+
+
+                     <div class="row justify-content-center">
+   
+                <div class="blog-post-footer">
+                    <applause-button style="width: 58px; height: 58px;" multiclap="true" url="https://clarewest.github.io/blog/post/latexing-with-gvim/"/>
+                </div>
+        <div class="blog-post-footer">
+  
+
+<style>
+#share-buttons {display: inline-block; vertical-align: middle; }
+#share-buttons:after {content: ""; display: block; clear: both;}
+#share-buttons > div {
+position: relative;
+text-align: left; 
+height: 36px; 
+width: 32px; 
+float: left; 
+text-align: center;
+}
+#share-buttons > div > svg {height: 16px; fill: #d5d5d5; margin-top: 10px;}
+#share-buttons > div:hover {cursor: pointer;}
+#share-buttons > div.facebook:hover > svg {fill: #3B5998;}
+#share-buttons > div.twitter:hover > svg {fill: #55ACEE;}
+#share-buttons > div.linkedin:hover > svg {fill: #0077b5;}
+#share-buttons > div.pinterest:hover > svg {fill: #CB2027;}
+#share-buttons > div.gplus:hover > svg {fill: #dd4b39;}
+#share-buttons > div.mail:hover > svg {fill: #7D7D7D;}
+#share-buttons > div.instagram:hover > svg {fill: #C73B92;}
+#share-buttons > div.facebook > svg {height: 18px; margin-top: 9px;}
+#share-buttons > div.twitter > svg {height: 20px; margin-top: 8px;}
+#share-buttons > div.linkedin > svg {height: 19px; margin-top: 7px;}
+#share-buttons > div.pinterest > svg {height: 20px; margin-top: 9px;}
+#share-buttons > div.mail > svg {height: 14px; margin-top: 11px;}
+</style>
+
+<span style="color: silver;">Share this post on: <br></span><div id="share-buttons">
+<div class="twitter" title="Share this on Twitter" onclick="window.open('http://twitter.com/intent/tweet?url=https:\/\/clarewest.github.io\/blog\/post\/latexing-with-gvim\/');"><svg viewBox="0 0 1792 1792" xmlns="http://www.w3.org/2000/svg"><path d="M1684 408q-67 98-162 167 1 14 1 42 0 130-38 259.5t-115.5 248.5-184.5 210.5-258 146-323 54.5q-271 0-496-145 35 4 78 4 225 0 401-138-105-2-188-64.5t-114-159.5q33 5 61 5 43 0 85-11-112-23-185.5-111.5t-73.5-205.5v-4q68 38 146 41-66-44-105-115t-39-154q0-88 44-163 121 149 294.5 238.5t371.5 99.5q-8-38-8-74 0-134 94.5-228.5t228.5-94.5q140 0 236 102 109-21 205-78-37 115-142 178 93-10 186-50z"/></svg></div>
+<div class="linkedin" title="Share this on Linkedin" onclick="window.open('https://www.linkedin.com/shareArticle?mini=true&url=https:\/\/clarewest.github.io\/blog\/post\/latexing-with-gvim\/&title=&summary=&source=');"><svg viewBox="0 0 1792 1792" xmlns="http://www.w3.org/2000/svg"><path d="M477 625v991h-330v-991h330zm21-306q1 73-50.5 122t-135.5 49h-2q-82 0-132-49t-50-122q0-74 51.5-122.5t134.5-48.5 133 48.5 51 122.5zm1166 729v568h-329v-530q0-105-40.5-164.5t-126.5-59.5q-63 0-105.5 34.5t-63.5 85.5q-11 30-11 81v553h-329q2-399 2-647t-1-296l-1-48h329v144h-2q20-32 41-56t56.5-52 87-43.5 114.5-15.5q171 0 275 113.5t104 332.5z"/></svg></div>
+<div class="mail" title="Share this through Email" onclick="window.open('mailto:?&body=https:\/\/clarewest.github.io\/blog\/post\/latexing-with-gvim\/');"><svg viewBox="0 0 1792 1792" xmlns="http://www.w3.org/2000/svg"><path d="M1792 710v794q0 66-47 113t-113 47h-1472q-66 0-113-47t-47-113v-794q44 49 101 87 362 246 497 345 57 42 92.5 65.5t94.5 48 110 24.5h2q51 0 110-24.5t94.5-48 92.5-65.5q170-123 498-345 57-39 100-87zm0-294q0 79-49 151t-122 123q-376 261-468 325-10 7-42.5 30.5t-54 38-52 32.5-57.5 27-50 9h-2q-23 0-50-9t-57.5-27-52-32.5-54-38-42.5-30.5q-91-64-262-182.5t-205-142.5q-62-42-117-115.5t-55-136.5q0-78 41.5-130t118.5-52h1472q65 0 112.5 47t47.5 113z"/></svg></div>
+</div>
+
+  </div>
+</div>
+
+
+                </div>
+              
+
+                
+            </div>
+          <div class="col-lg-1 justify-content-right">
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<section id="comments">
+    <div class="py-3 content">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-sm-12 col-lg-8">
+                    <div class="comments">
+                        <script src="https://utteranc.es/client.js" repo="clarewest/blog-comments"
+                            issue-term="pathname" label="comment" theme="github-light" crossorigin="anonymous" async>
+                            </script>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<footer class="site-footer">
+<div class="content">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-sm-12 col-lg-8">
+
+                      <div class="footer-col-wrapper">
+      <div class="footer-col footer-col-1">
+        <ul class="contact-list">
+          <li class="p-name">Clare E. West</li></ul>
+      </div>
+      <div class="footer-col footer-col-2">
+        <ul class="social-media-list">
+          <li>
+            <a href="https://github.com/clarewest">
+                                  <i class="fa fa-github social-icon"></i>
+
+                <span class="username">clarewest</span>
+                </a>
+                </li>
+                <li>
+                  <a href="http://twitter.com/claree_west">
+                    <i class="fa fa-twitter social-icon"></i>
+                    <span class="username">claree_west</span></a>
+                    </li>
+                    </ul>
+      
+</div>
+
+      <div class="footer-col footer-col-3">
+        <p>Data adventures of a former biochemist.</p>
+      </div>
+      </div>
+                       
+                        
+                  </div>
+        </div>
+    </div>
+</div>
+</footer>
+
+    
+
+    
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.2.0/highlight.min.js" integrity="sha512-TDKKr+IvoqZnPzc3l35hdjpHD0m+b2EC2SrLEgKDRWpxf2rFCxemkgvJ5kfU48ip+Y+m2XVKyOCD85ybtlZDmw==" crossorigin="anonymous"></script>
+        
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.2.0/languages/r.min.js" defer></script>
+        
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.2.0/languages/python.min.js" defer></script>
+        
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.2.0/languages/stan.min.js" defer></script>
+        
+        <script>
+            window.addEventListener('load', function() {
+                hljs.initHighlighting();
+            }, true);
+        </script>
+    
+
+    
+
+    
+    
+        
+<script src="https://clarewest.github.io/blog/js/math-code.js"></script>
+<script async src="//cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+
+
+    
+
+    
+</body>
+
+
+
+</html>
