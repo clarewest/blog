@@ -49,5 +49,14 @@
 </description>
     </item>
     
+    <item>
+      <title>Protein Structure Classification: Order in the Chaos</title>
+      <link>https://clarewest.github.io/blog/post/protein-structure-classification/</link>
+      <pubDate>Tue, 28 Feb 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://clarewest.github.io/blog/post/protein-structure-classification/</guid>
+      <description>&lt;p&gt;This post gives an overview of systematic approaches for protein structure classification based on sequence and structural similarity, which are essential for understanding protein function and evolution, as well as for training and benchmarking new methods for protein structure prediction.&lt;/p&gt;</description>
+    </item>
+    
   </channel>
 </rss>

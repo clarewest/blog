@@ -1,0 +1,355 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title> Protein Structure Classification: Order in the Chaos - Clare&#39;s Blog </title>
+    <meta name="HandheldFriendly" content="True">
+    <meta name="MobileOptimized" content="320">
+    <meta name="referrer" content="strict-origin">
+    <meta name="description" content="Overview of protein structure classification" />
+    <meta property="og:site_name" content="Clare&#39;s Blog" />
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:type" content="article" />
+    <meta property="og:url" content="https://clarewest.github.io/blog/post/protein-structure-classification/" />
+    <meta property="og:title" content="Protein Structure Classification: Order in the Chaos" />
+    <meta property="og:image" content="https://clarewest.github.io/blog/post/protein-structure-classification/images/image.png"/>
+    <meta property="og:description" content="Overview of protein structure classification" />
+
+    <meta name="twitter:card" content="summary" />
+    
+    <meta name="twitter:site" content="@claree_west">
+    <meta name="twitter:creator" content="@claree_west">
+    
+    <meta name="twitter:title" content="Protein Structure Classification: Order in the Chaos" />
+    <meta name="twitter:description" content="Overview of protein structure classification" />
+    <meta name="twitter:image" content="https://clarewest.github.io/blog/post/protein-structure-classification/images/image.png " />
+
+    <link rel="canonical" href="https://clarewest.github.io/blog/post/protein-structure-classification/">
+    <link rel="stylesheet" href="https://clarewest.github.io/blog//font-awesome-4.7.0/css/font-awesome.min.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha512-MoRNloxbStBcD8z3M/2BmnT+rg4IsMxPkXaGh2zD6LGNNFE80W3onsAhRcMAMrSoyWL9xD7Ert0men7vR8LUZg==" crossorigin="anonymous" />
+
+    <link rel="stylesheet" href="https://clarewest.github.io/blog//css/custom.css" />
+    
+    
+    <script id="twitter-wjs" type="text/javascript" async defer src="//platform.twitter.com/widgets.js"></script>
+    
+    <link href="https://clarewest.github.io/blog//lib/datatables-css-0.0.0/datatables-crosstalk.css" rel="stylesheet" />
+    <link href="https://clarewest.github.io/blog//lib/dt-core-1.10.20/css/jquery.dataTables.min.css" rel="stylesheet" />
+    <link href="https://clarewest.github.io/blog//lib/dt-core-1.10.20/css/jquery.dataTables.extra.css" rel="stylesheet" />
+    <link href="https://clarewest.github.io/blog//lib/crosstalk-1.1.0.1/css/crosstalk.css" rel="stylesheet" />
+    <script src="https://clarewest.github.io/blog//lib/htmlwidgets-1.5.1/htmlwidgets.js"></script>
+    <script src="https://clarewest.github.io/blog//lib/jquery-1.12.4/jquery.min.js"></script>
+    <script src="https://clarewest.github.io/blog//lib/datatables-binding-0.14/datatables.js"></script>
+    <script src="https://clarewest.github.io/blog//lib/dt-core-1.10.20/js/jquery.dataTables.min.js"></script>
+    <script src="https://clarewest.github.io/blog//lib/crosstalk-1.1.0.1/js/crosstalk.min.js"></script>
+    
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.2.0/styles/github-gist.min.css" integrity="sha512-od7JLoOTxM8w/HSKGzP9Kexc20K9p/M2zxSWsd7H1e4Ctf+8SQFtCWEZnW5u6ul5ehSECa5QmOk9ju2nQMmlVA==" crossorigin="anonymous" />
+    
+
+    
+
+    <link rel="shortcut icon"
+        href="https://clarewest.github.io/blog/images/favicon.png">
+
+    
+    <link href="https://clarewest.github.io/blog/index.xml" rel="alternate" type="application/rss+xml" title="Clare&#39;s Blog" />
+    
+    
+      
+  <link rel="stylesheet" href="https://unpkg.com/applause-button@3.4.0/dist/applause-button.css">
+  <script src="https://unpkg.com/applause-button@3.4.0/dist/applause-button.js"></script>
+  
+</head>
+
+<body>
+  
+    
+<div class="mt-xl header">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-auto">
+                <a href="https://clarewest.github.io/blog/">
+                    <h1 class="name">Clare&#39;s Blog</h1>
+                </a>
+            </div>
+        </div>
+
+        <div class="row justify-content-center">
+            <ul class="nav nav-primary">
+                
+                <li class="nav-item">
+                    <a class="btn btn-outline" href="https://clarewest.github.io/blog/">
+                          
+                        Home 
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="btn btn-outline" href="https://github.com/clarewest">
+                          
+                        GitHub 
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="btn btn-outline" href="https://twitter.com/claree_west">
+                          
+                        Twitter 
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="btn btn-outline" href="https://clarewest.github.io">
+                          
+                        Website 
+                    </a>
+                </li>
+                
+            </ul>
+        </div>
+    </div>
+</div>
+
+<div class="content">
+    <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-lg-1 justify-content-right">
+              <applause-button style="width: 50px; height: 50px;" multiclap="true" url="https://clarewest.github.io/blog/post/protein-structure-classification/"/>
+          </div>
+            <div class="col-sm-12 col-lg-8">
+                <h1 class="mx-0 mx-md-4 blog-post-title">Protein Structure Classification: Order in the Chaos</h1>
+
+                <div class="mb-md-4 meta">
+                    
+                    
+                    <span class="author" title="CE West">
+                        CE West
+                    </span>
+                    
+                    
+
+                    <span class="date middot" title='Tue Feb 28 2017 00:00:00 UTC'>
+                        2017-02-28
+                    </span>
+
+                    <span class="reading-time middot">
+                        4 min read
+                    </span>
+
+                    <div class="d-none d-md-inline tags">
+                        <ul class="list-unstyled d-inline">
+                            
+                            <li class="d-inline middot">
+                                <a href="https://clarewest.github.io/blog/tags/phd">phd</a>
+                            </li>
+                            
+                            <li class="d-inline middot">
+                                <a href="https://clarewest.github.io/blog/tags/proteins">proteins</a>
+                            </li>
+                            
+                            <li class="d-inline middot">
+                                <a href="https://clarewest.github.io/blog/tags/bioinformatics">bioinformatics</a>
+                            </li>
+                            
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="markdown blog-post-content">
+                    
+    <p>This post gives an overview of systematic approaches for protein structure classification based on sequence and structural similarity, which are essential for understanding protein function and evolution, as well as for training and benchmarking new methods for protein structure prediction.</p>
+<p>The number of known protein structures has increased exponentially over the past decades; there are currently over 127,000 structures deposited in the PDB<sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup>. To bring order to this large volume of data, and to further our understanding of protein function and evolution, these structures are systematically classified according to sequence and structural similarity. Downloadable classification data can be used for annotating datasets, exploring the properties of proteins and for the training and benchmarking of new methods <sup id="fnref:2"><a href="#fn:2" class="footnote-ref" role="doc-noteref">2</a></sup>.</p>
+<div class="figure">
+<p><img src="https://www.blopig.com/blog/wp-content/uploads/2017/02/pdb_structures.png?ssl=1" alt="Number of structures in the PDB"></p>
+<p class="caption">Yearly growth of structures in the PDB (adapted from [^1]</p>
+</div>
+<p>Typically, proteins are grouped by structural similarity and organised using hierarchical clustering. Proteins are sorted into classes based on overall secondary structure composition, and grouped into related families and superfamilies. Although this process could originally be manually curated, as with Structural Classification of Proteins (<a href="http://scop.mrc-lmb.cam.ac.uk/scop/">SCOP</a>) <sup id="fnref:3"><a href="#fn:3" class="footnote-ref" role="doc-noteref">3</a></sup> (last updated in June 2009), the growing number of protein structures now requires semi- or fully-automated methods, such as SCOP-extended (<a href="http://scop.berkeley.edu/">SCOPe</a>) <sup id="fnref:4"><a href="#fn:4" class="footnote-ref" role="doc-noteref">4</a></sup> and Class, Architecture, Topology, Homology (<a href="http://www.cathdb.info/">CATH</a>) <sup id="fnref:5"><a href="#fn:5" class="footnote-ref" role="doc-noteref">5</a></sup>. These resources are comprehensive and widely used, particularly in computational protein research. There is a large proportion of agreement between these databases, but subjectivity of protein classification is to be expected. Variation in methods and hierarchical structure result in differences in classifications.  For example, different criteria for defining and classifying domains results in inconsistencies between CATH and SCOPe.</p>
+<p>The arrangements of secondary structure elements in space are known as folds. As a result of evolution, the number of folds that exist in nature is thought to be finite, predicted to be between 1000-10,000 <sup id="fnref:6"><a href="#fn:6" class="footnote-ref" role="doc-noteref">6</a></sup>. Analysis of currently known structures appears to support this hypothesis, although solved structures in the PDB are likely to be a skewed sample of all protein structures space. Some folds are extremely commonly observed in protein structures.</p>
+<p>In his ‘periodic table for protein structures’, William Taylor went one step further in his goal to find a comprehensive, non-hierarchical method of protein classification <sup id="fnref:7"><a href="#fn:7" class="footnote-ref" role="doc-noteref">7</a></sup>. He attempted to identify a minimal set of building blocks, referred to as basic Forms, that can be used to assemble as many globular protein structures as possible. These basic Forms can be combined systematically in layers in a way analogous to the combination of electrons into valence shells to form the periodic table. An individual protein structure can then be described as the closest matching combination of these basic Forms.  Related proteins can be identified by the largest combination of basic Forms they have in common.</p>
+<div class="figure">
+<p><img src="https://www.blopig.com/blog/wp-content/uploads/2017/02/TaylorForms.jpg?w=600&amp;ssl=1" alt="Basic forms diagram"></p>
+<p class="caption">The ‘basic Forms’ that make up Taylor’s ‘periodic table of proteins’. These secondary structure elements accounted for, on average, 80% of each protein in a set of 2,230 structures (all-alpha proteins were excluded from the dataset) [^7]</p>
+</div>
+<p>The classification of proteins by sequence, secondary and tertiary structure is extensive. A relatively new frontier for protein classification is the quaternary structure: how proteins assemble into di-, tri- and multimeric complexes. In a recent publication by an interdisciplinary team of researchers, an analysis of multimeric protein structures in combination with mass spectrometry data was used to create a ‘periodic table of protein complexes’ <sup id="fnref:8"><a href="#fn:8" class="footnote-ref" role="doc-noteref">8</a></sup>. Three main types of assembly steps were identified: dimerisation, cyclisation and heteromeric subunit addition. These types are systematically combined to predict many possible topologies of protein complexes, within which the majority of known complexes were found to reside. As has been the case with tertiary structure, this classification and exploration of of quaternary structure space could lead to a better understanding of protein structure, function and evolutionary relationships. In addition, it may inform the modelling and docking of multimeric proteins.</p>
+<p><em>This blog post was originally posted on the <a href="https://www.blopig.com/blog/2017/02/protein-structure-classification-order-in-the-chaos/">OPIG blog</a>.</em></p>
+<p><img src="" alt=""></p>
+<section class="footnotes" role="doc-endnotes">
+<hr>
+<ol>
+<li id="fn:1" role="doc-endnote">
+<p><a href="http://www.rcsb.org/pdb/static.do?p=general_information/pdb_statistics/index.html">RCSB PDB Statistics</a> <a href="#fnref:1" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:2" role="doc-endnote">
+<p>Fox, N.K., Brenner, S.E., Chandonia, J.-M., 2015. The value of protein structure classification information-Surveying the scientific literature. Proteins Struct. Funct. Bioinforma. 83, 2025–2038. <a href="#fnref:2" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:3" role="doc-endnote">
+<p>Murzin AG, Brenner SE, Hubbard T, Chothia C., 1995. SCOP: a structural classification of proteins database for the investigation of sequences and structures. J Mol Biol. 247, 536–540. <a href="#fnref:3" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:4" role="doc-endnote">
+<p>Fox, N.K., Brenner, S.E., Chandonia, J.-M., 2014. SCOPe: Structural Classification of Proteins–extended, integrating SCOP and ASTRAL data and classification of new structures. Nucleic Acids Res. 42, 304-9. <a href="#fnref:4" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:5" role="doc-endnote">
+<p>Dawson NL, Lewis TE, Das S, et al., 2017. CATH: an expanded resource to predict protein function through structure and sequence. Nucleic Acids Research. 45, 289-295. <a href="#fnref:5" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:6" role="doc-endnote">
+<p>Derek N Woolfson, Gail J Bartlett, Antony J Burton, Jack W Heal, Ai Niitsu, Andrew R Thomson, Christopher W Wood,. 2015. De novo protein design: how do we expand into the universe of possible protein structures?, Current Opinion in Structural Biology, 33, 16-26. <a href="#fnref:6" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:7" role="doc-endnote">
+<p>Taylor, W.R., 2002. A “periodic table” for protein structures. Nature. 416, 657–660. <a href="#fnref:7" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:8" role="doc-endnote">
+<p>Ahnert, S.E., Marsh, J.A., Hernandez, H., Robinson, C. V., Teichmann, S.A., 2015. Principles of assembly reveal a periodic table of protein complexes. Science. 80, 350 <a href="#fnref:8" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+</ol>
+</section>
+
+
+                     <div class="row justify-content-center">
+   
+                <div class="blog-post-footer">
+                    <applause-button style="width: 58px; height: 58px;" multiclap="true" url="https://clarewest.github.io/blog/post/protein-structure-classification/"/>
+                </div>
+        <div class="blog-post-footer">
+  
+
+<style>
+#share-buttons {display: inline-block; vertical-align: middle; }
+#share-buttons:after {content: ""; display: block; clear: both;}
+#share-buttons > div {
+position: relative;
+text-align: left; 
+height: 36px; 
+width: 32px; 
+float: left; 
+text-align: center;
+}
+#share-buttons > div > svg {height: 16px; fill: #d5d5d5; margin-top: 10px;}
+#share-buttons > div:hover {cursor: pointer;}
+#share-buttons > div.facebook:hover > svg {fill: #3B5998;}
+#share-buttons > div.twitter:hover > svg {fill: #55ACEE;}
+#share-buttons > div.linkedin:hover > svg {fill: #0077b5;}
+#share-buttons > div.pinterest:hover > svg {fill: #CB2027;}
+#share-buttons > div.gplus:hover > svg {fill: #dd4b39;}
+#share-buttons > div.mail:hover > svg {fill: #7D7D7D;}
+#share-buttons > div.instagram:hover > svg {fill: #C73B92;}
+#share-buttons > div.facebook > svg {height: 18px; margin-top: 9px;}
+#share-buttons > div.twitter > svg {height: 20px; margin-top: 8px;}
+#share-buttons > div.linkedin > svg {height: 19px; margin-top: 7px;}
+#share-buttons > div.pinterest > svg {height: 20px; margin-top: 9px;}
+#share-buttons > div.mail > svg {height: 14px; margin-top: 11px;}
+</style>
+
+<span style="color: silver;">Share this post on: <br></span><div id="share-buttons">
+<div class="twitter" title="Share this on Twitter" onclick="window.open('http://twitter.com/intent/tweet?url=https:\/\/clarewest.github.io\/blog\/post\/protein-structure-classification\/');"><svg viewBox="0 0 1792 1792" xmlns="http://www.w3.org/2000/svg"><path d="M1684 408q-67 98-162 167 1 14 1 42 0 130-38 259.5t-115.5 248.5-184.5 210.5-258 146-323 54.5q-271 0-496-145 35 4 78 4 225 0 401-138-105-2-188-64.5t-114-159.5q33 5 61 5 43 0 85-11-112-23-185.5-111.5t-73.5-205.5v-4q68 38 146 41-66-44-105-115t-39-154q0-88 44-163 121 149 294.5 238.5t371.5 99.5q-8-38-8-74 0-134 94.5-228.5t228.5-94.5q140 0 236 102 109-21 205-78-37 115-142 178 93-10 186-50z"/></svg></div>
+<div class="linkedin" title="Share this on Linkedin" onclick="window.open('https://www.linkedin.com/shareArticle?mini=true&url=https:\/\/clarewest.github.io\/blog\/post\/protein-structure-classification\/&title=&summary=&source=');"><svg viewBox="0 0 1792 1792" xmlns="http://www.w3.org/2000/svg"><path d="M477 625v991h-330v-991h330zm21-306q1 73-50.5 122t-135.5 49h-2q-82 0-132-49t-50-122q0-74 51.5-122.5t134.5-48.5 133 48.5 51 122.5zm1166 729v568h-329v-530q0-105-40.5-164.5t-126.5-59.5q-63 0-105.5 34.5t-63.5 85.5q-11 30-11 81v553h-329q2-399 2-647t-1-296l-1-48h329v144h-2q20-32 41-56t56.5-52 87-43.5 114.5-15.5q171 0 275 113.5t104 332.5z"/></svg></div>
+<div class="mail" title="Share this through Email" onclick="window.open('mailto:?&body=https:\/\/clarewest.github.io\/blog\/post\/protein-structure-classification\/');"><svg viewBox="0 0 1792 1792" xmlns="http://www.w3.org/2000/svg"><path d="M1792 710v794q0 66-47 113t-113 47h-1472q-66 0-113-47t-47-113v-794q44 49 101 87 362 246 497 345 57 42 92.5 65.5t94.5 48 110 24.5h2q51 0 110-24.5t94.5-48 92.5-65.5q170-123 498-345 57-39 100-87zm0-294q0 79-49 151t-122 123q-376 261-468 325-10 7-42.5 30.5t-54 38-52 32.5-57.5 27-50 9h-2q-23 0-50-9t-57.5-27-52-32.5-54-38-42.5-30.5q-91-64-262-182.5t-205-142.5q-62-42-117-115.5t-55-136.5q0-78 41.5-130t118.5-52h1472q65 0 112.5 47t47.5 113z"/></svg></div>
+</div>
+
+  </div>
+</div>
+
+
+                </div>
+              
+
+                
+            </div>
+          <div class="col-lg-1 justify-content-right">
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<section id="comments">
+    <div class="py-3 content">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-sm-12 col-lg-8">
+                    <div class="comments">
+                        <script src="https://utteranc.es/client.js" repo="clarewest/blog-comments"
+                            issue-term="pathname" label="comment" theme="github-light" crossorigin="anonymous" async>
+                            </script>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<footer class="site-footer">
+<div class="content">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-sm-12 col-lg-8">
+
+                      <div class="footer-col-wrapper">
+      <div class="footer-col footer-col-1">
+        <ul class="contact-list">
+          <li class="p-name">Clare E. West</li></ul>
+      </div>
+      <div class="footer-col footer-col-2">
+        <ul class="social-media-list">
+          <li>
+            <a href="https://github.com/clarewest">
+                                  <i class="fa fa-github social-icon"></i>
+
+                <span class="username">clarewest</span>
+                </a>
+                </li>
+                <li>
+                  <a href="http://twitter.com/claree_west">
+                    <i class="fa fa-twitter social-icon"></i>
+                    <span class="username">claree_west</span></a>
+                    </li>
+                    </ul>
+      
+</div>
+
+      <div class="footer-col footer-col-3">
+        <p>Data adventures of a former biochemist.</p>
+      </div>
+      </div>
+                       
+                        
+                  </div>
+        </div>
+    </div>
+</div>
+</footer>
+
+    
+
+    
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.2.0/highlight.min.js" integrity="sha512-TDKKr+IvoqZnPzc3l35hdjpHD0m+b2EC2SrLEgKDRWpxf2rFCxemkgvJ5kfU48ip+Y+m2XVKyOCD85ybtlZDmw==" crossorigin="anonymous"></script>
+        
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.2.0/languages/r.min.js" defer></script>
+        
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.2.0/languages/python.min.js" defer></script>
+        
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.2.0/languages/stan.min.js" defer></script>
+        
+        <script>
+            window.addEventListener('load', function() {
+                hljs.initHighlighting();
+            }, true);
+        </script>
+    
+
+    
+
+    
+    
+        
+
+    
+
+    
+</body>
+
+
+
+</html>
